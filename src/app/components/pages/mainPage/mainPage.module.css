@@ -1,0 +1,115 @@
+.mainPageWrap {
+    background-image: url('../../../assets/images/norilsk-main.png');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    opacity: 0;
+}
+
+.mainImageVisible {
+    opacity: 1;
+    transition: all ease-in-out 3s;
+}
+
+.starWrap {
+    /*background: #008c7577;*/
+    width: 6vw;
+    height: 6vw;
+    min-width: 9vh;
+    min-height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 2%;
+}
+
+.starImagePos1 {
+    width: 20%;
+    opacity: 0;
+}
+
+.starImagePos2 {
+    transition: all ease .5s;
+    width: 99%;
+    opacity: 1;
+}
+
+.starImagePos3 {
+    transition: all ease .4s;
+    width: 20%;
+    opacity: .2;
+}
+
+.mainTitleWrap {
+    /*font-family: 'STIX Two Text', serif;*/
+    position: absolute;
+    font-weight: 400;
+    color: #fff;
+    top: 7vw;
+    left: calc(58vw + 80px);
+    text-align: right;
+}
+
+.mainTitle {
+    font-size: 5.12vw;
+}
+
+.mainSubTitle {
+    font-size: 2.2vw;
+    font-style: italic;
+}
+
+.titleInvisible {
+    margin-top: -150px;
+    opacity: 0;
+}
+
+.titleVisible {
+    margin-top: 0;
+    opacity: 1;
+    transition: all ease 2s;
+}
+
+.mainPageMenu {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.menuItem {
+    width: 0;
+    font-family: var(--sans);
+    overflow: hidden;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 2vw;
+    text-transform: uppercase;
+    transform: scaleX(1.05);
+    padding: .5vw 0 .3vw 3vw;
+    background: linear-gradient(90deg, #4ea5d0, #4ea5d000) ;
+    box-shadow: -30px 3px 15px 0 #254554;
+    cursor: pointer;
+    margin-left: -3vw;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.menuItem:hover {
+    background: linear-gradient(90deg, #60caff, #4ea5d000) ; ;
+    transition: all .5s ease;
+}
+
+.menuItemVisible {
+    margin-left: 0;
+    width: 18vw;
+    opacity: 1;
+}
+
+@media screen and (max-width: 1200px) {
+}
