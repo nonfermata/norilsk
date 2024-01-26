@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/norilsk/static/css/main.2df1d839.css",
+    "main.js": "/norilsk/static/js/main.d41e23e6.js",
+    "static/media/norilsk-main.png": "/norilsk/static/media/norilsk-main.ca199e60c9802cc2e9b7.png",
+    "static/media/star.png": "/norilsk/static/media/star.800a734c7e1539c4ad51.png",
+    "index.html": "/norilsk/index.html",
+    "main.2df1d839.css.map": "/norilsk/static/css/main.2df1d839.css.map",
+    "main.d41e23e6.js.map": "/norilsk/static/js/main.d41e23e6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2df1d839.css",
+    "static/js/main.d41e23e6.js"
+  ]
+}
