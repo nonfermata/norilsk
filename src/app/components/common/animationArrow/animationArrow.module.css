@@ -1,0 +1,43 @@
+.arrowDown,
+.arrowUp {
+    height: 80px;
+    margin-top: -20px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transform: scaleY(.5);
+}
+
+.arrowDown::before,
+.arrowUp::before {
+    content: '';
+    position: absolute;
+    left: calc(50% - 1vw);
+    width: 3.5vw;
+    height: 3.5vw;
+    transform: rotate(-45deg);
+}
+
+.arrowDown::before {
+    animation: down 4s infinite;
+    border-left: 8px solid var(--light-blue);
+    border-bottom: 8px solid var(--light-blue);
+}
+
+.arrowUp::before {
+    top: 30px;
+    border-top: 8px solid var(--dark-blue);
+    border-right: 8px solid var(--dark-blue);
+}
+
+@keyframes down {
+    30% {
+        top: 0;
+    }
+    40% {
+        top: 20px;
+    }
+    55% {
+        top: 0;
+    }
+}

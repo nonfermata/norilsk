@@ -1,15 +1,21 @@
 import React, { useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
 import classes from './mainPage.module.css';
 import star from '../../../assets/images/star.png';
 import menu from '../../../data/menu';
+import Prolog from './prolog/prolog';
+import { showFooter } from '../../../../redux/footerReducer';
 
 const MainPage = () => {
+    const dispatch = useDispatch();
     const [starStyle, setStarStyle] = useState(classes.starImagePos1);
     const [titleStyle, setTitleStyle] = useState(classes.titleInvisible);
     const [mainImageStyle, setMainImageStyle] = useState();
     const [menuItemStyle, setMenuItemStyle] = useState(
         menu.map(({ id }) => ({ [id]: '' }))
     );
+    const [isProlog, setIsProlog] = useState(false);
+
     useEffect(() => {
         setMainImageStyle(classes.mainImageVisible);
         setTimeout(() => {
@@ -27,6 +33,10 @@ const MainPage = () => {
                                     [id]: classes.menuItemVisible
                                 }));
                             }, Number(id) * 200);
+                            setTimeout(() => {
+                                setIsProlog(true);
+                                dispatch(showFooter());
+                            }, 1200);
                         });
                     }, 300);
                 }, 500);
@@ -56,6 +66,7 @@ const MainPage = () => {
                     </div>
                 ))}
             </div>
+            {isProlog && <Prolog />}
         </div>
     );
 };

@@ -18,6 +18,7 @@ module.exports = {
             'error',
             { anonymous: 'always', named: 'never' }
         ],
+        "react/prop-types": 0,
         quotes: ['error', 'single', { allowTemplateLiterals: true }],
         'multiline-ternary': ['off']
     }

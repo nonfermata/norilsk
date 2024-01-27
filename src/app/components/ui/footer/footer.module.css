@@ -1,0 +1,16 @@
+.footerWrap {
+    padding: 20px;
+    background-color: rgba(18, 35, 66, .95);
+    border-top: 1px solid var(--light-blue);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease all;
+}
+
+.footerVisible {
+    opacity: 1;
+}

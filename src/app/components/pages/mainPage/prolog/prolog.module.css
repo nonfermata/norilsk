@@ -1,0 +1,44 @@
+.prologWrap {
+    position: absolute;
+    top: 16.5vw;
+    right: 0;
+    width: calc(37vw + 50px);
+    height: auto;
+}
+
+.prologTextBlock {
+    background-color: #ffffffcc;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    opacity: 0;
+    height: 0;
+    padding: 0 35px;
+    transition: all 1s ease;
+}
+
+.prologVisible {
+    height: 100%;
+    padding: 50px 35px 35px;
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+.prologBtnWrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.prologBtn {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 5px;
+    left: calc(50% - 50px);
+    background-color: #008c75;
+    z-index: 1;
+    cursor: pointer;
+}

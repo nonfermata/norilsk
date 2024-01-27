@@ -5,6 +5,7 @@
   "author": "Dima Baulin <nonfermata@gmail.com>",
   "main": "index.js",
   "private": true,
+  "homepage": "https://nonfermata.github.io/norilsk/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",
     "@testing-library/jest-dom": "^5.16.5",

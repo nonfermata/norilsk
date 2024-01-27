@@ -6,11 +6,12 @@
     --serif: 'STIX Two Text', serif;
     --base-black: #111;
     --base-white: #fffff5;
-    --profile-bg: #22879a;
+    --dark-blue: #3f68ad;
+    --light-blue: #80eaff;
+    --light-blue2: #99eeff;
     --base-blue: #00758c;
     --sidebar-blue: #00758cdd;
     --menu-item: var(--base-white);
-    --menu-item-active: #99eeff;
     --ex-light-grey: hsl(50, 10%, 90%);
     --light-grey: hsl(50, 10%, 75%);
     --light-semi-grey: #aaa;
@@ -49,10 +50,13 @@
 
 html,
 body,
-#root,
-.container {
+#root {
     width: 100%;
     height: 100%;
+}
+
+html {
+    background-color: var(--dark-blue);
 }
 
 body {
@@ -61,10 +65,8 @@ body {
 }
 
 .container {
-    /*padding: 50px;*/
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*justify-content: center;*/
+    min-height: 100%;
+    position: relative;
 }
 
 textarea,
