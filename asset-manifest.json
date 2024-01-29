@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/norilsk/static/css/main.7b6ed069.css",
-    "main.js": "/norilsk/static/js/main.966ec003.js",
+    "main.css": "/norilsk/static/css/main.398a6532.css",
+    "main.js": "/norilsk/static/js/main.e864b12e.js",
     "static/media/norilsk-main.png": "/norilsk/static/media/norilsk-main.baf701f4d60cf1af3718.png",
+    "static/media/mediaschool-logo.png": "/norilsk/static/media/mediaschool-logo.615478bcb1c734c91fc6.png",
     "static/media/star.png": "/norilsk/static/media/star.800a734c7e1539c4ad51.png",
     "index.html": "/norilsk/index.html",
-    "main.7b6ed069.css.map": "/norilsk/static/css/main.7b6ed069.css.map",
-    "main.966ec003.js.map": "/norilsk/static/js/main.966ec003.js.map"
+    "main.398a6532.css.map": "/norilsk/static/css/main.398a6532.css.map",
+    "main.e864b12e.js.map": "/norilsk/static/js/main.e864b12e.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b6ed069.css",
-    "static/js/main.966ec003.js"
+    "static/css/main.398a6532.css",
+    "static/js/main.e864b12e.js"
   ]
 }
