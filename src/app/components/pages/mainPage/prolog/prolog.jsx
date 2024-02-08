@@ -16,15 +16,9 @@ const Prolog = () => {
                     (prologVisibility && classes.prologVisible)
                 }
             >
-                вступительное слово вступительное слово вступительное слово
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Aliquid at beatae, dolorum ducimus eligendi esse et
-                exercitationem, explicabo, fugiat id provident rerum saepe sit
-                tempora totam unde ut. A, accusamus doloremque eaque eius
-                facilis fugit nesciunt odio perferendis quidem, quo
-                reprehenderit sequi vel, veniam. Adipisci alias aperiam beatae
-                blanditiis consectetur delectus dicta dolorum eligendi eos error
-                est expedita fuga ipsam laudantium maiores molestiae.
+                ...несколько слов короткого приветствия, про уникальную книгу о
+                Норильске, переведенную в web-формат, один абзац, либо два
+                маленьких, до 400 знаков
             </div>
             <div className={classes.prologBtnWrap}>
                 <AnimationArrow
@@ -32,9 +26,6 @@ const Prolog = () => {
                     arrowDown={prologVisibility}
                 />
             </div>
-            {/*<button onClick={handlePrologStatus} className={classes.prologBtn}>*/}
-            {/*    BUTTON*/}
-            {/*</button>*/}
         </div>
     );
 };

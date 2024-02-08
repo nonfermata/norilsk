@@ -2,18 +2,18 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const footerSlice = createSlice({
     name: 'footer',
-    initialState: { isVisible: false },
+    initialState: { isVisible: true },
     reducers: {
-        show(state) {
-            state.isVisible = true;
+        modify(state, action) {
+            state.isVisible = action.payload;
         }
     }
 });
 
-const { show } = footerSlice.actions;
+const { modify } = footerSlice.actions;
 const footerReducer = footerSlice.reducer;
 
-export const showFooter = () => show();
+export const modifyFooter = (status) => modify(status);
 
 export const getFooterStatus = () => (state) => state.footer.isVisible;
 

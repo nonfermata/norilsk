@@ -1,0 +1,91 @@
+.articlePageWrap {
+}
+
+.articleHead {
+    display: flex;
+    justify-content: flex-start;
+    /*align-content: stretch;*/
+    position: relative;
+    height: max-content;
+}
+
+.titleVrezkaWrap {
+    padding-left: 50px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    background-size: cover;
+    background-position: center;
+    width: 53%;
+}
+
+.titleArticle {
+    font-size: 2.5rem;
+    font-weight: 500;
+    opacity: 1;
+    width: fit-content;
+    border-bottom: 1px solid var(--dark-blue);
+    padding-bottom: 20px;
+    font-family: var(--sans);
+    color: var(--dark-blue);
+    animation: titleArt 1.5s normal;
+}
+
+@keyframes titleArt {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        margin-left: -80px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+.subTitle {
+    font-size: 1.7rem;
+    /*font-weight: 300;*/
+    color: var(--blue);
+    line-height: 1.4em;
+    max-width: 90%;
+    opacity: 1;
+    animation: subTitle 1.5s normal;
+}
+
+@keyframes subTitle {
+    0% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.mainImgWrap {
+    width: 47%;
+    border-right: 15px solid var(--grey-blue);
+    opacity: 1;
+    animation: mainImg 2s alternate;
+}
+
+@keyframes mainImg {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

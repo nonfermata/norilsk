@@ -1,16 +1,46 @@
 .footerWrap {
-    padding: 20px;
-    background-color: rgba(18, 35, 66, .95);
-    border-top: 1px solid var(--light-blue);
-    color: white;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--deep-blue);
+    border-top: 1px solid var(--light-cyan);
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    text-align: center;
     opacity: 0;
     transition: .5s ease all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
 .footerVisible {
     opacity: 1;
+}
+
+.mediaschool {
+    height: 54px;
+}
+
+.nornikel {
+    height: 30px;
+}
+
+.gorod {
+    height: 43px;
+}
+
+.footerWrap img {
+    height: 100%;
+}
+
+.footerAddresses {
+    font-family: var(--sans);
+    font-size: .8rem;
+    line-height: 1.1rem;
+    text-align: left;
+    color: var(--base-white);
+    border-left: 1px solid var(--light-cyan);
+    padding-left: 30px;
 }

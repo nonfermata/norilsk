@@ -3,7 +3,6 @@
     top: 16.5vw;
     right: 0;
     width: calc(37vw + 50px);
-    height: auto;
 }
 
 .prologTextBlock {
@@ -13,6 +12,9 @@
     opacity: 0;
     height: 0;
     padding: 0 35px;
+    font-style: italic;
+    font-family: var(--serif);
+    font-size: 1.1rem;
     transition: all 1s ease;
 }
 

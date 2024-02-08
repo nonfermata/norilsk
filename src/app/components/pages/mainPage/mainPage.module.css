@@ -1,16 +1,20 @@
 .mainPageWrap {
-    background-image: url('../../../assets/images/norilsk-main.png');
     width: 100%;
     height: 100vh;
+    background-image: url('../../../assets/images/norilsk-main.png');
     background-size: cover;
     background-position: top;
     position: relative;
-    opacity: 0;
 }
 
-.mainImageVisible {
+.visible {
     opacity: 1;
-    transition: all ease-in-out 3s;
+    transition: all ease 3s;
+}
+
+.invisible {
+    opacity: 0;
+    transition: all ease .2s;
 }
 
 .starWrap {
@@ -26,21 +30,43 @@
     top: 2%;
 }
 
-.starImagePos1 {
+.starZero {
     width: 20%;
     opacity: 0;
 }
 
-.starImagePos2 {
-    transition: all ease .5s;
-    width: 99%;
-    opacity: 1;
+.starAnimated {
+    width: 100%;
+    animation: down 7s normal;
+    /*animation: down 7s infinite;*/
 }
 
-.starImagePos3 {
-    transition: all ease .4s;
-    width: 20%;
-    opacity: .2;
+@keyframes down {
+    0% {
+        width: 30%;
+        opacity: .3;
+    }
+    5% {
+        width: 100%;
+        opacity: 1;
+    }
+    10% {
+        width: 30%;
+        opacity: .3;
+    }
+    15% {
+        width: 100%;
+        opacity: 1;
+    }
+    /*95% {*/
+    /*    width: 100%;*/
+    /*    opacity: 1;*/
+    /*}*/
+    /*100% {*/
+    /*    width: 30%;*/
+    /*    opacity: .3;*/
+    /*}*/
+
 }
 
 .mainTitleWrap {
@@ -50,6 +76,7 @@
     top: 6vw;
     left: calc(58vw + 80px);
     text-align: right;
+    font-family: var(--serif);
 }
 
 .mainTitle {
@@ -86,11 +113,10 @@
     color: white;
     font-weight: 400;
     letter-spacing: 1px;
-    font-size: calc(1.7vw + 5px);
+    font-size: calc(1.5vw + 5px);
     text-transform: uppercase;
-    /*transform: scaleX(1.05);*/
     padding: .5vw 0 .3vw 3vw;
-    background: linear-gradient(90deg, #4ea5d0, #4ea5d000) ;
+    background: linear-gradient(90deg, #4ea5d0, #4ea5d000);
     box-shadow: -30px 3px 15px 0 #254554;
     cursor: pointer;
     margin-left: -3vw;
@@ -99,7 +125,7 @@
 }
 
 .menuItem:hover {
-    background: linear-gradient(90deg, #60caff, #4ea5d000) ; ;
+    background: linear-gradient(90deg, #60caff, #4ea5d000);;
     transition: all .5s ease;
 }
 

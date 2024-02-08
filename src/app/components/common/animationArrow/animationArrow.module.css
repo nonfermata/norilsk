@@ -16,28 +16,41 @@
     width: 3.5vw;
     height: 3.5vw;
     transform: rotate(-45deg);
+    opacity: .75;
 }
 
 .arrowDown::before {
-    animation: down 4s infinite;
-    border-left: 8px solid var(--light-blue);
-    border-bottom: 8px solid var(--light-blue);
+    border-left: 8px solid var(--light-cyan);
+    border-bottom: 8px solid var(--light-cyan);
+    animation: down 6s infinite;
+}
+
+.arrowDown:hover::before,
+.arrowUp:hover::before {
+    opacity: 1;
 }
 
 .arrowUp::before {
     top: 30px;
-    border-top: 8px solid var(--dark-blue);
-    border-right: 8px solid var(--dark-blue);
+    border-top: 8px solid var(--blue);
+    border-right: 8px solid var(--blue);
 }
 
 @keyframes down {
-    30% {
+    35% {
         top: 0;
     }
     40% {
         top: 20px;
     }
-    55% {
+    45% {
+        top: 10px;
+    }
+    50% {
+        top: 20px;
+    }
+    60% {
         top: 0;
     }
+
 }
