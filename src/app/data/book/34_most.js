@@ -13,7 +13,7 @@ const most = {
         {
             title: 'Как мы снимали «Титаник»',
             author: 'Юрий Денисов',
-            text: ''
+            text: ['']
         }
     ],
     mainImg: most0,

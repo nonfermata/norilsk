@@ -14,7 +14,7 @@ const lama = {
         {
             title: 'Никого — кроме меня и природы',
             author: 'Изабелла Чупрова',
-            text: ''
+            text: ['']
         }
     ],
     mainImg: lama0,

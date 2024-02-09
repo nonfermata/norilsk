@@ -12,7 +12,7 @@ const kombinat = {
         {
             title: 'Мой папа — супергерой!',
             author: 'Арина Бабыкина',
-            text: ''
+            text: ['']
         }
     ],
     mainImg: kombinat0,

@@ -14,11 +14,10 @@ const ArticlePageA = ({ articleName }) => {
         // type,
         mainTitle,
         subTitle,
-        // vrezka,
+        vrezka,
         chapters,
-        // mainImg,
         // subArticles,
-        // ps,
+        ps,
         mainImg,
         bgrImg
         // monoImg,
@@ -36,7 +35,7 @@ const ArticlePageA = ({ articleName }) => {
                     alt={mainTitle}
                 />
                 <div
-                    className={classes.titleVrezkaWrap}
+                    className={classes.titleSubtitleWrap}
                     style={{ backgroundImage: 'url(' + bgrImg + ')' }}
                 >
                     {/*<pre>*/}
@@ -47,6 +46,27 @@ const ArticlePageA = ({ articleName }) => {
                     </div>
                 </div>
             </div>
+            {vrezka && (
+                <div className={classes.vrezkaWrap}>
+                    <div className={classes.vrezka}>{vrezka}</div>
+                </div>
+            )}
+            {chapters.map(({ title, author, text }) => (
+                <div key={title} className={classes.chapterWrap}>
+                    {!isSingle && (
+                        <div className={classes.chapterTitle}>{title}</div>
+                    )}
+                    <div className={classes.chapterAuthor}>
+                        Текст: <span className='fw500'>{author}</span>
+                    </div>
+                    <div className={classes.chapterText}>
+                        {text.map((item, index) => (
+                            <p key={index}>{item}</p>
+                        ))}
+                        {ps && <p className={classes.ps}>{ps}</p>}
+                    </div>
+                </div>
+            ))}
         </div>
     );
 };

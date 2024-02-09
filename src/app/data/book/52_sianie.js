@@ -14,12 +14,12 @@ const sianie = {
         {
             title: 'Дорога в потусторонний мир\n',
             author: 'Анна Рогачёва',
-            text: ''
+            text: ['']
         },
         {
             title: 'Слушай музыку неба…',
             author: 'Никита Макаров',
-            text: ''
+            text: ['']
         }
     ],
     mainImg: sianie0,

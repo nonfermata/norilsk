@@ -14,12 +14,12 @@ const dolgoe = {
         {
             title: 'Индустриальный натурализм',
             author: 'Денис Кащеев',
-            text: ''
+            text: ['']
         },
         {
             title: 'Апокалипсис. Но — любимый!',
             author: 'Валерия Магомедова',
-            text: ''
+            text: ['']
         }
     ],
     mainImg: dolgoe0,

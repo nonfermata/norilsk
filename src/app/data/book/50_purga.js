@@ -14,7 +14,7 @@ const purga = {
         {
             title: 'Главное — не паниковать!',
             author: 'Марина Громченко',
-            text: ''
+            text: ['']
         }
     ],
     mainImg: purga0,

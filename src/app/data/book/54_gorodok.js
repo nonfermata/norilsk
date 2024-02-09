@@ -13,7 +13,7 @@ const gorodok = {
         {
             title: 'Самый классный аттракцион — ледяная горка!',
             author: 'Дарья Березина',
-            text: ''
+            text: ['']
         }
     ],
     mainImg: gorodok0,

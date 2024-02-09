@@ -19,7 +19,7 @@ const oganerskaya = {
         {
             title: 'Пространство танца',
             author: 'Анастасия Курносова',
-            text: ''
+            text: ['']
         }
     ],
     mainImg: oganerskaya0,

@@ -13,7 +13,7 @@ const kvartirniki = {
         {
             title: 'Уют и творчество',
             author: 'Анна Галимьянова (Кассета)',
-            text: ''
+            text: ['']
         }
     ],
     subArticles: [

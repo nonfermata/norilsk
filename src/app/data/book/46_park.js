@@ -13,12 +13,12 @@ const park = {
         {
             title: 'Тут мы гуляли с папой',
             author: 'Алена Зебарева',
-            text: ''
+            text: ['']
         },
         {
             title: 'Трогая душу города',
             author: 'Валентина Щербакова',
-            text: ''
+            text: ['']
         }
     ],
     mainImg: park0,

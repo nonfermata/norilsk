@@ -12,12 +12,12 @@ const night = {
         {
             title: 'Бабушка и летающая тарелка',
             author: 'Александра Щелкунова',
-            text: ''
+            text: ['']
         },
         {
             title: 'Побег',
             author: 'Женя Штефан',
-            text: ''
+            text: ['']
         }
     ],
     mainImg: night0,

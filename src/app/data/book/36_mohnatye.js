@@ -15,17 +15,17 @@ const mohnatye = {
         {
             title: 'Бенгальский тигренок',
             author: 'Елизавета Цветкова',
-            text: ''
+            text: ['']
         },
         {
             title: 'Любитель огурцов',
             author: 'Софья Кононова',
-            text: ''
+            text: ['']
         },
         {
             title: 'Его усатое величество',
             author: 'Анастасия Чернышова',
-            text: ''
+            text: ['']
         }
     ],
     mainImg: mohnatye0,

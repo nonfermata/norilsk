@@ -12,7 +12,7 @@ const holod = {
         {
             title: 'Он сформировал меня как личность',
             author: 'Даниил Валантырь',
-            text: ''
+            text: ['']
         }
     ],
     mainImg: holod0,

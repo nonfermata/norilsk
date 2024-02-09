@@ -14,7 +14,7 @@ const zapoliarnik = {
         {
             title: 'Но ни слова о спорте!',
             author: 'Кристина Беседина',
-            text: ''
+            text: ['']
         }
     ],
     mainImg: zapoliarnik0,

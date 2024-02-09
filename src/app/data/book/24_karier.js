@@ -13,7 +13,7 @@ const karier = {
         {
             title: 'Он — как многие люди: лучшее спрятано в глубине',
             author: 'Никита Сорокин',
-            text: ''
+            text: ['']
         }
     ],
     mainImg: karier0,

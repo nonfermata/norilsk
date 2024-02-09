@@ -9,8 +9,10 @@
     --light-cyan: #80f8ff;
     --ex-light-blue: #edfbff;
     --top-menu-bgr: #ffffffee;
-    --top-menu-shadow: #77777755;
+    --top-menu-shadow: #33333355;
+    --light-grey-blue: #bdefe2;
     --grey-blue: #afd2dd;
+    --dark-grey-blue: #599eb3;
     --blue: #2e65c3;
     --dark-blue: #003899;
     --deep-blue: #122342;
@@ -21,15 +23,14 @@
     --semi-grey: #888;
     --dark-grey: #646464;
     --ex-light-beige: #f5f5e9;
-    --light-beige: #e0e0d1;
-    --semi-light-beige: #ebebdb;
-    --semi-beige: #d4d4c6;
-    --brown-grey: #877059;
+    --light-beige: #f2f5d5;
+    --beige: #eaefbd;
     --light-orange: #ffd580;
     --peach: #dc8b51;
     --semi-orange: #ffb042;
     --orange: #ee7700;
     --dark-orange: #d92400;
+    --brown-grey: #877059;
     --upcoming-bg: #c5ede4;
     --now-bg: #fafab6;
     --completed-bg: #d5f2cb;
@@ -60,6 +61,7 @@ body,
 
 body {
     font-family: var(--sans);
+    font-size: 16px;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
 }
@@ -122,7 +124,7 @@ a {
 
 .pageWrap {
     position: relative;
-    padding-top: 60px;
+    padding: 70px 0 90px 0;
 }
 
 .pageBgr {
@@ -138,7 +140,7 @@ a {
 
 .titleCategory {
     margin: 0 auto 0 0;
-    font-size: 3rem;
+    font-size: 3em;
     font-weight: 500;
     border-bottom: 0;
     padding: 30px 0 30px 50px;

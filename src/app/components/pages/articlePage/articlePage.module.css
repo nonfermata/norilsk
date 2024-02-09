@@ -4,12 +4,12 @@
 .articleHead {
     display: flex;
     justify-content: flex-start;
-    /*align-content: stretch;*/
     position: relative;
-    height: max-content;
+    height: auto;
+    border-bottom: 1px solid var(--beige);
 }
 
-.titleVrezkaWrap {
+.titleSubtitleWrap {
     padding-left: 50px;
     padding-right: 30px;
     display: flex;
@@ -22,7 +22,7 @@
 }
 
 .titleArticle {
-    font-size: 2.5rem;
+    font-size: 2.5em;
     font-weight: 500;
     opacity: 1;
     width: fit-content;
@@ -50,10 +50,8 @@
 }
 
 .subTitle {
-    font-size: 1.7rem;
-    /*font-weight: 300;*/
+    font-size: 1.7em;
     color: var(--blue);
-    line-height: 1.4em;
     max-width: 90%;
     opacity: 1;
     animation: subTitle 1.5s normal;
@@ -88,4 +86,67 @@
     100% {
         opacity: 1;
     }
+}
+
+.vrezkaWrap {
+    padding: 30px 0;
+    background-color: var(--beige);
+    font-style: italic;
+    font-family: var(--serif);
+    font-size: 1.1em;
+    line-height: 1.4em;
+}
+
+.vrezka {
+    width: 70%;
+    padding: 0 15px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.chapterWrap {
+    padding: 30px 0 40px;
+    border-bottom: 1px solid var(--beige);
+}
+
+.chapterTitle {
+    font-size: 1.7em;
+    color: var(--blue);
+    line-height: 1.4em;
+    width: fit-content;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.chapterAuthor {
+    width: fit-content;
+    border-radius: 4px;
+    margin: 0 auto;
+    font-size: .8em;
+    padding: 5px 12px;
+    color: white;
+    background-color: var(--dark-grey-blue);
+}
+
+.chapterText {
+    padding: 30px 15px 0 15px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.chapterText p {
+    margin-bottom: 10px;
+    text-indent: 30px;
+    line-height: 1.5em;
+}
+
+.chapterText p.ps {
+    font-style: italic;
+    font-family: var(--serif);
+    font-size: 1.07em;
+    text-indent: 0;
+    text-align: center;
+    color: var(--deep-blue);
 }

@@ -13,7 +13,7 @@ const naberezh = {
         {
             title: 'Научиться держать равновесие…',
             author: 'Никита Макаров',
-            text: ''
+            text: ['']
         }
     ],
     mainImg: naberezh0,

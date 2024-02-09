@@ -13,12 +13,12 @@ const theatre = {
         {
             title: 'Тут каждый становится аристократом',
             author: 'Юлия Исакова',
-            text: ''
+            text: ['']
         },
         {
             title: '…А я танцевала здесь вальс любви!',
             author: 'Валерия Расадина',
-            text: ''
+            text: ['']
         }
     ],
     subArticles: null,

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
 import Locations from './locations/locations';
 import About from './about/about';
 import Symbols from './symbols/symbols';
 import Menu from '../../ui/menu/menu';
 import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import { getBgr } from '../../../../redux/bgrImgReducer';
 
 const Category = ({ category }) => {

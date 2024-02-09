@@ -14,12 +14,12 @@ const taxi = {
         {
             title: 'Кино и страшные истории',
             author: 'Арина Мышева',
-            text: ''
+            text: ['']
         },
         {
             title: 'Покоритель женских сердец',
             author: 'Кирилл Женовачёв',
-            text: ''
+            text: ['']
         }
     ],
     mainImg: taxi0,

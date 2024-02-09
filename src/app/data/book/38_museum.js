@@ -13,7 +13,7 @@ const museum = {
         {
             title: 'Как он был только моим',
             author: 'Любовь Коуба',
-            text: ''
+            text: ['']
         }
     ],
     mainImg: museum0,
