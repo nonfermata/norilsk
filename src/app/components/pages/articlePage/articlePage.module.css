@@ -163,8 +163,6 @@
     font-style: italic;
     font-family: var(--serif);
     font-size: 1.07em;
-    text-indent: 0;
-    text-align: center;
     color: var(--deep-blue);
 }
 

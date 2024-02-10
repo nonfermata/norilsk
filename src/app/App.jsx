@@ -17,7 +17,7 @@ const App = () => {
                     <Routes>
                         <Route path='/' element={<MainPage />} />
                         <Route
-                            path='about'
+                            path='about/:subCutName?'
                             element={<Category category={'about'} />}
                         />
                         <Route
@@ -27,10 +27,6 @@ const App = () => {
                         <Route
                             path='symbols/:symbol?'
                             element={<Category category={'symbols'} />}
-                        />
-                        <Route
-                            path='creators'
-                            element={<Category category={'creators'} />}
                         />
                         <Route path='*' element={<Navigate to='/' />} />
                     </Routes>

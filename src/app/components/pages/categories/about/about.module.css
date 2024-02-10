@@ -7,6 +7,12 @@
     width: 80%;
 }
 
+.catHeadWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .aboutRightContent {
     width: 20%;
     padding-top: 50px;
@@ -28,7 +34,7 @@
 }
 
 .text {
-    padding: 30px 0 50px 50px;
+    padding: 30px 0 0 50px;
     font-family: var(--serif);
 }
 
@@ -39,8 +45,23 @@
     margin-bottom: .7em;
 }
 
-.thanks {
-    font-style: italic;
-    font-size: 1.1em;
+.endLine {
+    margin: 30px 0 30px 50px;
+    height: 1px;
+    background-color: var(--dark-grey-blue);
+}
+
+.thanks,
+.dedication {
+    text-indent: 30px;
     line-height: 1.4em;
+    font-style: italic;
+    font-size: 1.05em;
+    font-family: var(--serif);
+    padding-left: 50px;
+}
+
+.dedication {
+    padding-bottom: 50px;
+    padding-top: 20px;
 }

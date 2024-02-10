@@ -1,0 +1,18 @@
+.personsWrap {
+    margin: 0 0 50px 50px;
+}
+
+.personWrap {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 2%;
+}
+
+.personRole {
+    width: 31%;
+}
+
+.personName {
+    width: 67%;
+    font-weight: 500;
+}
