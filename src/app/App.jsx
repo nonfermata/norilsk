@@ -28,6 +28,10 @@ const App = () => {
                             path='symbols/:symbol?'
                             element={<Category category={'symbols'} />}
                         />
+                        <Route
+                            path='creators'
+                            element={<Category category={'creators'} />}
+                        />
                         <Route path='*' element={<Navigate to='/' />} />
                     </Routes>
                     <Footer />

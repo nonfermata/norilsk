@@ -2,9 +2,16 @@
     list-style: none;
     margin-left: 50px;
     line-height: 1.4em;
+    padding-bottom: 30px;
 }
 
 .tempList li {
     cursor: pointer;
     width: fit-content;
+    padding: 2px 0;
+}
+
+.tempList li:hover {
+    color: var(--dark-blue);
+    font-weight: 500;
 }

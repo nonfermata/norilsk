@@ -7,10 +7,9 @@
     --base-black: #111;
     --base-white: #fffff5;
     --light-cyan: #80f8ff;
-    --ex-light-blue: #edfbff;
-    --top-menu-bgr: #ffffffee;
+    --ex-light-blue: #f5fdff;
     --top-menu-shadow: #33333355;
-    --light-grey-blue: #bdefe2;
+    --light-grey-blue: #d7eef5;
     --grey-blue: #afd2dd;
     --dark-grey-blue: #599eb3;
     --blue: #2e65c3;
@@ -22,14 +21,16 @@
     --semi-light-grey: #aaa;
     --semi-grey: #888;
     --dark-grey: #646464;
-    --ex-light-beige: #f5f5e9;
-    --light-beige: #f2f5d5;
-    --beige: #eaefbd;
+    --ex-light-beige: #f5f2e9;
+    --lighter-beige: #f5f0e1;
+    --light-beige: #f5edd5;
+    --beige: #f0e3bd;
     --light-orange: #ffd580;
     --peach: #dc8b51;
     --semi-orange: #ffb042;
     --orange: #ee7700;
     --dark-orange: #d92400;
+    --brown: #a8873f;
     --brown-grey: #877059;
     --upcoming-bg: #c5ede4;
     --now-bg: #fafab6;
@@ -63,6 +64,7 @@ body {
     font-family: var(--sans);
     font-size: 16px;
     font-weight: 400;
+    color: black;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -75,6 +77,10 @@ select {
     font-size: inherit;
     border: none;
     outline: none;
+}
+
+img {
+    display: block;
 }
 
 

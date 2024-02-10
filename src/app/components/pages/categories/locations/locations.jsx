@@ -6,6 +6,7 @@ import locationsBgr from '../../../../assets/images/locations-bgr.png';
 import { setBrg } from '../../../../../redux/bgrImgReducer';
 import allBook from '../../../../data/book/allBook';
 import classes from '../category.module.css';
+import scrollToTop from '../../../../utils/scrollToTop';
 
 const Locations = () => {
     const navigate = useNavigate();
@@ -26,6 +27,7 @@ const Locations = () => {
         setIsVisible(false);
         setTimeout(() => {
             setRerender((prevState) => !prevState);
+            scrollToTop();
             navigate(link);
         }, 200);
     };

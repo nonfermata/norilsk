@@ -15,17 +15,35 @@ const Footer = () => {
                 classes.footerWrap + ' ' + (isFooter && classes.footerVisible)
             }
         >
-            <div className={classes.mediaschool}>
+            <a
+                href='https://popovmedia.ru/'
+                title='Медиашкола Игоря Попова'
+                target='_blank'
+                rel='noreferrer'
+                className={classes.mediaschool}
+            >
                 <img src={mediaschool} alt='Медиашкола - logo' />
-            </div>
-            <div className={classes.nornikel}>
+            </a>
+            <a
+                href='https://nornickel.ru/'
+                title='Компания «Норникель»'
+                target='_blank'
+                rel='noreferrer'
+                className={classes.nornikel}
+            >
                 <img src={nornikel} alt='Норникель - logo' />
-            </div>
-            <div className={classes.gorod}>
+            </a>
+            <a
+                href='https://sgnorilsk.ru/'
+                title='Медиакомпания «Северный город»'
+                target='_blank'
+                rel='noreferrer'
+                className={classes.gorod}
+            >
                 <img src={gorod} alt='Северный город - logo' />
-            </div>
+            </a>
             <div className={classes.footerAddresses}>
-                <p>Наш адрес: 663302, Красноярский край,  </p>
+                <p>Наш адрес: 663302, Красноярский край, </p>
                 <p>г. Норильск, ул. Комсомольская, д. 33А</p>
                 <p>E-mail: test@test.com </p>
             </div>

@@ -13,6 +13,11 @@ const menu = [
         id: '003',
         name: 'Символы',
         link: 'symbols'
+    },
+    {
+        id: '004',
+        name: 'Создатели',
+        link: 'creators'
     }
 ];
 

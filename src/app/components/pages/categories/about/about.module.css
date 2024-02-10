@@ -1,6 +1,46 @@
+.aboutWrap {
+    display: flex;
+    align-items: flex-start;
+}
+
+.aboutLeftContent {
+    width: 80%;
+}
+
+.aboutRightContent {
+    width: 20%;
+    padding-top: 50px;
+}
+
+.aboutRightContent img {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .vrezka {
     font-style: italic;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    color: white;
+    background-color: var(--dark-grey-blue);
+    width: fit-content;
+    padding: 15px 15px 15px 50px;
+}
+
+.text {
+    padding: 30px 0 50px 50px;
     font-family: var(--serif);
-    max-width: 80%;
-    margin-left: 50px;
+}
+
+.text p {
+    text-indent: 30px;
+    font-size: 1.05em;
+    line-height: 1.4em;
+    margin-bottom: .7em;
+}
+
+.thanks {
+    font-style: italic;
+    font-size: 1.1em;
+    line-height: 1.4em;
 }

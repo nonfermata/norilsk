@@ -90,7 +90,7 @@
 
 .vrezkaWrap {
     padding: 30px 0;
-    background-color: var(--beige);
+    background-color: var(--light-beige);
     font-style: italic;
     font-family: var(--serif);
     font-size: 1.1em;
@@ -98,6 +98,7 @@
 }
 
 .vrezka {
+    white-space: pre-wrap;
     width: 70%;
     padding: 0 15px;
     margin: 0 auto;
@@ -105,9 +106,25 @@
     font-size: 1.1em;
 }
 
+.photoAuthor {
+    height: 50px;
+    margin-bottom: -50px;
+    width: fit-content;
+    max-width: 400px;
+    font-size: .9em;
+    font-style: italic;
+    padding: 10px 0 0 40px;
+}
+
 .chapterWrap {
-    padding: 30px 0 40px;
-    border-bottom: 1px solid var(--beige);
+    padding: 40px 0 0;
+}
+
+.endLine {
+    width: 70%;
+    margin: 40px auto 0;
+    height: 1px;
+    background-color: var(--beige);
 }
 
 .chapterTitle {
@@ -126,7 +143,7 @@
     font-size: .8em;
     padding: 5px 12px;
     color: white;
-    background-color: var(--dark-grey-blue);
+    background-color: var(--brown);
 }
 
 .chapterText {
@@ -149,4 +166,33 @@
     text-indent: 0;
     text-align: center;
     color: var(--deep-blue);
+}
+
+.vinietka {
+    width: 150px;
+    margin: 20px auto 0;
+}
+
+.subArticleWrap {
+    width: 60%;
+    font-size: .95em;
+    line-height: 1.4em;
+    border-top: 1px solid var(--grey-blue);
+    border-bottom: 1px solid var(--grey-blue);
+    margin: 30px auto 20px;
+    padding: 0 25px 25px;
+    background: linear-gradient(180deg, var(--light-grey-blue), var(--ex-light-blue));
+}
+
+.subArticleTitle {
+    color: white;
+    font-weight: 500;
+    background-color: var(--dark-grey-blue);
+    width: fit-content;
+    padding: 5px 25px;
+    margin: 0 0 20px -25px;
+}
+
+.subArticleText {
+
 }

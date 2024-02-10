@@ -25,8 +25,7 @@ const otdyh = {
     mainImg: otdyh0,
     bgrImg: otdyhBgr,
     monoImg: otdyhMono,
-    images: [otdyh1],
-    photoAuthor: ''
+    images: [otdyh1]
 };
 
 export default otdyh;

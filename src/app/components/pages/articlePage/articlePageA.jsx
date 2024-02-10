@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import classes from './articlePage.module.css';
 import allBook from '../../../data/book/allBook';
 import { setBrg } from '../../../../redux/bgrImgReducer';
+import vinietka from '../../../assets/images/vinietka.png';
 
 const ArticlePageA = ({ articleName }) => {
     const dispatch = useDispatch();
@@ -16,13 +17,13 @@ const ArticlePageA = ({ articleName }) => {
         subTitle,
         vrezka,
         chapters,
-        // subArticles,
+        subArticles,
         ps,
         mainImg,
-        bgrImg
+        bgrImg,
         // monoImg,
         // images,
-        // photoAuthor
+        photoAuthor
     } = article;
     const isSingle = chapters.length === 1;
     dispatch(setBrg(''));
@@ -51,6 +52,11 @@ const ArticlePageA = ({ articleName }) => {
                     <div className={classes.vrezka}>{vrezka}</div>
                 </div>
             )}
+            {photoAuthor && (
+                <div className={classes.photoAuthor}>
+                    Фотографии: <span className='fw500'>{photoAuthor}</span>
+                </div>
+            )}
             {chapters.map(({ title, author, text }) => (
                 <div key={title} className={classes.chapterWrap}>
                     {!isSingle && (
@@ -65,6 +71,23 @@ const ArticlePageA = ({ articleName }) => {
                         ))}
                         {ps && <p className={classes.ps}>{ps}</p>}
                     </div>
+                    {subArticles &&
+                        subArticles.map((item, index) => (
+                            <div key={index} className={classes.subArticleWrap}>
+                                <div className={classes.subArticleTitle}>
+                                    {item.title}
+                                </div>
+                                <div className={classes.subArticleText}>
+                                    {item.text}
+                                </div>
+                            </div>
+                        ))}
+                    <img
+                        src={vinietka}
+                        className={classes.vinietka}
+                        alt='Vinietka'
+                    />
+                    <div className={classes.endLine}></div>
                 </div>
             ))}
         </div>

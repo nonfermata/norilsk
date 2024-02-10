@@ -6,6 +6,8 @@ import Menu from '../../ui/menu/menu';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { getBgr } from '../../../../redux/bgrImgReducer';
+import scrollToTop from '../../../utils/scrollToTop';
+import Creators from './creators/creators';
 
 const Category = ({ category }) => {
     const navigate = useNavigate();
@@ -21,6 +23,7 @@ const Category = ({ category }) => {
         setIsVisible(false);
         setTimeout(() => {
             setRerender((prevState) => !prevState);
+            scrollToTop();
             navigate(link);
         }, 200);
     };
@@ -34,6 +37,7 @@ const Category = ({ category }) => {
             {category === 'about' && <About />}
             {category === 'locations' && <Locations />}
             {category === 'symbols' && <Symbols />}
+            {category === 'creators' && <Creators />}
         </div>
     );
 };

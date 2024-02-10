@@ -20,14 +20,17 @@
 }
 
 .mediaschool {
+    display: block;
     height: 54px;
 }
 
 .nornikel {
+    display: block;
     height: 30px;
 }
 
 .gorod {
+    display: block;
     height: 43px;
 }
 
