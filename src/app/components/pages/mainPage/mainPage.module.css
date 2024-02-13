@@ -135,5 +135,46 @@
     opacity: 1;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 640px) {
+    .mainPageWrap {
+        background-image: url('../../../assets/images/norilsk-main-mobile.png');
+    }
+
+    .starWrap {
+        top: 30vw;
+        left: 44%;
+    }
+
+    .mainTitleWrap {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .titleInvisible {
+        margin-top: -50px;
+    }
+
+    .titleVisible {
+        transition: all ease 1s;
+    }
+
+    .mainTitle {
+        font-size: 2.5em;
+    }
+
+    .mainSubTitle {
+        font-size: 1.3em;
+    }
+
+    .mainPageMenu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
 }

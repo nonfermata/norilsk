@@ -6,6 +6,7 @@ import menu from '../../../data/menu';
 import { useNavigate } from 'react-router-dom';
 import Prolog from './prolog/prolog';
 import { modifyFooter } from '../../../../redux/footerReducer';
+import Burger from '../../ui/burger/burger';
 
 const MainPageContent = () => {
     const navigate = useNavigate();
@@ -70,6 +71,7 @@ const MainPageContent = () => {
                 (isVisible ? classes.visible : classes.invisible)
             }
         >
+            <Burger handleFade={crossfade} isMainPage={true} />
             <div className={classes.mainTitleWrap}>
                 <div className={classes.mainTitle + ' ' + titleStyle}>
                     Норильск,

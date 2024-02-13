@@ -8,7 +8,7 @@ const park = {
     cat: 'locations',
     type: 'A',
     mainTitle: 'Парк у «Черного тюльпана» и\u00A0трубы',
-    subTitle: '*** подзаголовок ***',
+    subTitle: 'Здесь видишь не внешность Норильска',
     chapters: [
         {
             title: 'Тут мы гуляли с папой',

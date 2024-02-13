@@ -23,8 +23,8 @@ const About = () => {
             <div className={classes.aboutWrap}>
                 <div className={classes.aboutLeftContent}>
                     <div className={classes.catHeadWrap}>
-                        <div className='titleCategory'>О проекте</div>
                         <SubMenu />
+                        <div className='titleCategory'>О проекте</div>
                     </div>
                     {subCutName ? (
                         <SubCategory subCatName={subCutName} />

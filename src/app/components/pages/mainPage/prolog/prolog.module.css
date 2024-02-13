@@ -10,7 +10,7 @@
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     opacity: 0;
-    height: 0;
+    height: 100%;
     padding: 0 35px;
     font-style: italic;
     font-family: var(--serif);
@@ -19,7 +19,6 @@
 }
 
 .prologVisible {
-    height: 100%;
     padding: 50px 35px 35px;
     opacity: 1;
     transition: all 1s ease;
@@ -34,13 +33,32 @@
     justify-content: center;
 }
 
-.prologBtn {
-    width: 100px;
-    height: 50px;
-    position: absolute;
-    top: 5px;
-    left: calc(50% - 50px);
-    background-color: #008c75;
-    z-index: 1;
-    cursor: pointer;
+@media screen and (max-width: 640px) {
+    .prologWrap {
+        width: 100%;
+        left: 0;
+        top: auto;
+        bottom: 60px;
+    }
+
+    .prologTextBlock {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        padding: 20px;
+    }
+
+    .prologVisible {
+        padding: 20px 20px 60px;
+    }
+
+    .prologBtnWrap {
+        transform: rotateX(180deg);
+        top: auto;
+        bottom: 10px;
+        width: 72px;
+        border: 1px solid white;
+        background-color: var(--blue-opacity);
+        border-radius: 4px;
+        left: calc(50% - 36px);
+    }
 }

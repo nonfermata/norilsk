@@ -30,11 +30,6 @@ const ArticlePageA = ({ articleName }) => {
     return (
         <div className={classes.articlePageWrap}>
             <div className={classes.articleHead}>
-                <img
-                    className={classes.mainImgWrap}
-                    src={mainImg}
-                    alt={mainTitle}
-                />
                 <div
                     className={classes.titleSubtitleWrap}
                     style={{ backgroundImage: 'url(' + bgrImg + ')' }}
@@ -46,6 +41,11 @@ const ArticlePageA = ({ articleName }) => {
                         {isSingle ? chapters[0].title : subTitle}
                     </div>
                 </div>
+                <img
+                    className={classes.mainImgWrap}
+                    src={mainImg}
+                    alt={mainTitle}
+                />
             </div>
             {vrezka && (
                 <div className={classes.vrezkaWrap}>

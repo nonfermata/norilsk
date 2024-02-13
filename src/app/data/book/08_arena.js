@@ -9,7 +9,7 @@ const arena = {
     cat: 'locations',
     type: 'A',
     mainTitle: '«Арена»',
-    subTitle: '*** подзаголовок ***',
+    subTitle: 'Здесь тепло и уютно',
     chapters: [
         {
             title: 'Книги, скамейки и первая зарплата',

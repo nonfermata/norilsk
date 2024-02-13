@@ -9,7 +9,7 @@ const dolgoe = {
     cat: 'locations',
     type: 'A',
     mainTitle: 'Озеро Долгое',
-    subTitle: '*** подзаголовок ***',
+    subTitle: 'Почувствовать себя по-настоящему живым',
     chapters: [
         {
             title: 'Индустриальный натурализм',

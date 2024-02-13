@@ -25,15 +25,15 @@
     animation: down 6s infinite;
 }
 
-.arrowDown:hover::before,
-.arrowUp:hover::before {
-    opacity: 1;
-}
-
 .arrowUp::before {
     top: 30px;
     border-top: 8px solid var(--blue);
     border-right: 8px solid var(--blue);
+}
+
+.arrowDown:hover::before,
+.arrowUp:hover::before {
+    opacity: 1;
 }
 
 @keyframes down {
@@ -52,5 +52,44 @@
     60% {
         top: 0;
     }
+}
 
+@keyframes up {
+    35% {
+        top: 10px;
+    }
+    43% {
+        top: 30px;
+    }
+    53% {
+        top: 5px;
+    }
+    57% {
+        top: 10px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .arrowDown,
+    .arrowUp {
+        height: 60px;
+        left: -17px;
+    }
+
+    .arrowUp::before,
+    .arrowDown::before {
+        width: 35px;
+        height: 35px;
+    }
+
+    .arrowUp::before {
+        top: 35px;
+        border-top: 8px solid var(--light-cyan);
+        border-right: 8px solid var(--light-cyan);
+    }
+
+    .arrowDown::before {
+        top: 10px;
+        animation: up 4s infinite;
+    }
 }

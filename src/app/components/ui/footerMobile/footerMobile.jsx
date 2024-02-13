@@ -1,20 +1,12 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
-import classes from './footer.module.css';
-import { getFooterStatus } from '../../../../redux/footerReducer';
+import classes from './footerMobile.module.css';
 import mediaschool from '../../../assets/images/logotypes/mediaschool-logo.png';
 import nornikel from '../../../assets/images/logotypes/nornikel-logo.png';
 import gorod from '../../../assets/images/logotypes/gorod-logo.png';
 
-const Footer = () => {
-    const isFooter = useSelector(getFooterStatus());
-
+const FooterMobile = () => {
     return (
-        <div
-            className={
-                classes.footerWrap + ' ' + (isFooter && classes.footerVisible)
-            }
-        >
+        <div className={classes.footerMobileWrap}>
             <a
                 href='https://popovmedia.ru/'
                 title='Медиашкола Игоря Попова'
@@ -51,4 +43,4 @@ const Footer = () => {
     );
 };
 
-export default Footer;
+export default FooterMobile;

@@ -74,3 +74,57 @@
     padding-bottom: 50px;
     padding-top: 20px;
 }
+
+@media screen and (max-width: 991px) {
+    .aboutRightContent {
+        display: none;
+    }
+
+    .aboutLeftContent {
+        width: 100%;
+        padding-right: 30px;
+    }
+
+    .vrezka,
+    .text,
+    .thanks,
+    .dedication {
+        padding-left: 30px;
+    }
+
+    .endLine {
+        margin-left: 30px;
+    }
+
+    .audioBox {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .catHeadWrap {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .aboutLeftContent {
+        padding-right: 15px;
+    }
+
+    .vrezka,
+    .text,
+    .thanks,
+    .dedication {
+        padding-left: 15px;
+    }
+
+    .endLine {
+        margin-left: 15px;
+    }
+
+    .audioBox {
+        margin: 10px auto -10px;
+        width: fit-content;
+    }
+}

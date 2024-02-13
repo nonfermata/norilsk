@@ -1,7 +1,11 @@
 import React from 'react';
 import classes from './zaglushka.module.css';
 
-const Zaglushka = ({ setRunSite }) => {
+const Zaglushka = () => {
+    let word = prompt('Введите заветное слово:');
+    while (word !== 'Выдра') {
+        word = prompt('Это не оно. Введите заветное слово:');
+    }
     return (
         <div className={classes.zaglushkaWrap}>
             <p>Здравствуйте!</p>
@@ -14,7 +18,6 @@ const Zaglushka = ({ setRunSite }) => {
                     Скоро{' '}
                     <span
                         className={classes.secret}
-                        onClick={() => setRunSite(true)}
                     >
                         всё
                     </span>{' '}
@@ -24,5 +27,4 @@ const Zaglushka = ({ setRunSite }) => {
         </div>
     );
 };
-
 export default Zaglushka;

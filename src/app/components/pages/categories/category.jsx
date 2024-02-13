@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react';
 import Locations from './locations/locations';
 import About from './about/about';
 import Symbols from './symbols/symbols';
-import Menu from '../../ui/menu/menu';
+import Header from '../../ui/header/header';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { getBgr } from '../../../../redux/bgrImgReducer';
 import scrollToTop from '../../../utils/scrollToTop';
 import Creators from './about/subCategories/creators/creators';
+import FooterMobile from '../../ui/footerMobile/footerMobile';
 
 const Category = ({ category }) => {
     const navigate = useNavigate();
@@ -33,11 +34,12 @@ const Category = ({ category }) => {
                 className='pageBgr'
                 style={{ backgroundImage: 'url(' + bgrImg + ')' }}
             ></div>
-            <Menu handleFade={crossfade} />
+            <Header handleFade={crossfade} />
             {category === 'about' && <About />}
             {category === 'locations' && <Locations />}
             {category === 'symbols' && <Symbols />}
             {category === 'creators' && <Creators />}
+            <FooterMobile />
         </div>
     );
 };

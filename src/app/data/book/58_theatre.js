@@ -8,7 +8,7 @@ const theatre = {
     cat: 'locations',
     type: 'A',
     mainTitle: 'Театр драмы им. Владимира Маяковского',
-    subTitle: '*** подзаголовок ***',
+    subTitle: 'Один из лучших в Красноярском крае',
     chapters: [
         {
             title: 'Тут каждый становится аристократом',

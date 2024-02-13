@@ -38,7 +38,7 @@
     height: 100%;
 }
 
-.footerAddresses {
+.addresses {
     font-family: var(--sans);
     font-size: .8em;
     line-height: 1.3em;
@@ -46,4 +46,30 @@
     color: var(--base-white);
     border-left: 1px solid var(--light-cyan);
     padding-left: 30px;
+}
+
+@media screen and (max-width: 850px) {
+    .footerAddresses {
+        font-size: 0.75em;
+    }
+
+    .footerWrap img {
+        height: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .addresses {
+        display: none;
+    }
+
+    .footerWrap img {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .footerWrap {
+        display: none;
+    }
 }

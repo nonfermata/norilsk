@@ -7,7 +7,7 @@ const night = {
     cat: 'symbols',
     type: 'A',
     mainTitle: 'Полярная ночь',
-    subTitle: '*** подзаголовок ***',
+    subTitle: 'Непростая, таинственная, немного мистическая…',
     chapters: [
         {
             title: 'Бабушка и летающая тарелка',

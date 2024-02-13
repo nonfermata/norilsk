@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import classes from './prolog.module.css';
 import AnimationArrow from '../../../common/animationArrow/animationArrow';
+import prolog from '../../../../data/prolog';
 
 const Prolog = () => {
     const [prologVisibility, setPrologVisibility] = useState(false);
@@ -16,9 +17,7 @@ const Prolog = () => {
                     (prologVisibility && classes.prologVisible)
                 }
             >
-                ...несколько слов короткого приветствия, про уникальную книгу о
-                Норильске, переведенную в web-формат, один абзац, либо два
-                маленьких, до 400 знаков
+                {prolog}
             </div>
             <div className={classes.prologBtnWrap}>
                 <AnimationArrow

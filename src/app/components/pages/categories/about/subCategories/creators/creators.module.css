@@ -16,3 +16,27 @@
     width: 67%;
     font-weight: 500;
 }
+
+@media screen and (max-width: 991px) {
+    .personsWrap {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .personWrap {
+        flex-direction: column;
+        gap: 2px
+    }
+
+    .personRole,
+    .personName {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .personsWrap {
+        margin-left: 15px;
+    }
+}

@@ -1,7 +1,29 @@
 .subMenuWrap {
-    margin-right: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
+    order: 1;
+}
+
+@media screen and (max-width: 850px) {
+    .subMenuWrap {
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .subMenuWrap {
+        justify-content: flex-end;
+        margin: 25px 0 -25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .subMenuWrap {
+        justify-content: center;
+        padding-left: 0;
+        margin-right: -15px;
+        margin-bottom: -20px;
+    }
 }
