@@ -79,6 +79,9 @@ const MainPageContent = () => {
                 <div className={classes.mainSubTitle + ' ' + titleStyle}>
                     <span className='no_wrap'>который мы увозим с собой</span>
                 </div>
+                <div className={classes.mainDescription + ' ' + titleStyle}>
+                    Проект Медиашколы в Заполярье
+                </div>
             </div>
             <div className={classes.starWrap}>
                 <img className={starStyle} src={star} alt='star' />

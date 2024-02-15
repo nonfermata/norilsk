@@ -1,0 +1,30 @@
+.navButtonsWrap {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.navButton {
+    cursor: pointer;
+    user-select: none;
+    opacity: .75;
+    transition: .2s ease all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.navButton:hover {
+    opacity: 1;
+}
+
+.navButtonDisabled,
+.navButtonDisabled:hover {
+    cursor: default;
+    opacity: .35;
+}
+
+.arrow {
+    transform: scale(0.8, 1.5);
+}

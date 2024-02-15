@@ -4,15 +4,16 @@ import classes from './articlePage.module.css';
 import allBook from '../../../data/book/allBook';
 import { setBrg } from '../../../../redux/bgrImgReducer';
 import vinietka from '../../../assets/images/vinietka.png';
+import ArticlesNav from '../../ui/articlesNav/articlesNav';
 
-const ArticlePageA = ({ articleName }) => {
+const ArticlePageA = ({ articleName, handleFade }) => {
     const dispatch = useDispatch();
     const article = allBook.find((item) => articleName === item.name);
     const {
-        // id,
+        id,
         // name,
-        // cat,
         // type,
+        // cat,
         mainTitle,
         subTitle,
         vrezka,
@@ -30,13 +31,17 @@ const ArticlePageA = ({ articleName }) => {
     return (
         <div className={classes.articlePageWrap}>
             <div className={classes.articleHead}>
+                <div className={classes.articlesNavWrap}>
+                    <ArticlesNav
+                        currentArticleId={id}
+                        handleFade={handleFade}
+                    />
+                </div>
                 <div
                     className={classes.titleSubtitleWrap}
                     style={{ backgroundImage: 'url(' + bgrImg + ')' }}
                 >
-                    {/*<pre>*/}
                     <div className={classes.titleArticle}>{mainTitle}</div>
-                    {/*</pre>*/}
                     <div className={classes.subTitle}>
                         {isSingle ? chapters[0].title : subTitle}
                     </div>
@@ -57,7 +62,7 @@ const ArticlePageA = ({ articleName }) => {
                     Фотографии: <span className='fw500'>{photoAuthor}</span>
                 </div>
             )}
-            {chapters.map(({ title, author, text }) => (
+            {chapters.map(({ title, author, text }, index) => (
                 <div key={title} className={classes.chapterWrap}>
                     {!isSingle && (
                         <div className={classes.chapterTitle}>{title}</div>
@@ -87,9 +92,20 @@ const ArticlePageA = ({ articleName }) => {
                         className={classes.vinietka}
                         alt='Vinietka'
                     />
-                    <div className={classes.endLine}></div>
+                    {chapters.length - 1 !== index && (
+                        <div className={classes.endLine}></div>
+                    )}
                 </div>
             ))}
+            <div
+                className={
+                    classes.articlesNavWrap +
+                    ' ' +
+                    classes.articlesNavWrapBottom
+                }
+            >
+                <ArticlesNav currentArticleId={id} handleFade={handleFade} />
+            </div>
         </div>
     );
 };

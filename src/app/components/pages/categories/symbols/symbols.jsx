@@ -4,13 +4,13 @@ import { useNavigate, useParams } from 'react-router-dom';
 import ArticlePageA from '../../articlePage/articlePageA';
 import symbolsBgr from '../../../../assets/images/symbols-bgr.png';
 import { setBrg } from '../../../../../redux/bgrImgReducer';
-import allBook from '../../../../data/book/allBook';
 import classes from '../category.module.css';
+import getCategoryList from '../../../../utils/getCategoryList';
 
 const Symbols = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
-    const symbolsList = allBook.filter((item) => item.cat === 'symbols');
+    const symbolsList = getCategoryList('symbols');
     const { symbol } = useParams();
     if (!symbol) {
         dispatch(setBrg(symbolsBgr));
@@ -32,7 +32,7 @@ const Symbols = () => {
     return (
         <div className={isVisible ? 'visible' : 'invisible'}>
             {symbol ? (
-                <ArticlePageA articleName={symbol} />
+                <ArticlePageA articleName={symbol} handleFade={crossfade} />
             ) : (
                 <>
                     <div className='titleCategory'>Символы</div>

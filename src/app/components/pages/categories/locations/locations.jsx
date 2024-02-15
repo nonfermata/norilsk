@@ -4,14 +4,14 @@ import { useNavigate, useParams } from 'react-router-dom';
 import ArticlePageA from '../../articlePage/articlePageA';
 import locationsBgr from '../../../../assets/images/locations-bgr.png';
 import { setBrg } from '../../../../../redux/bgrImgReducer';
-import allBook from '../../../../data/book/allBook';
 import classes from '../category.module.css';
 import scrollToTop from '../../../../utils/scrollToTop';
+import getCategoryList from '../../../../utils/getCategoryList';
 
 const Locations = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
-    const locationsList = allBook.filter((item) => item.cat === 'locations');
+    const locationsList = getCategoryList('locations');
     const { location } = useParams();
     if (!location) {
         dispatch(setBrg(locationsBgr));
@@ -34,7 +34,7 @@ const Locations = () => {
     return (
         <div className={isVisible ? 'visible' : 'invisible'}>
             {location ? (
-                <ArticlePageA articleName={location} />
+                <ArticlePageA articleName={location} handleFade={crossfade} />
             ) : (
                 <>
                     <div className='titleCategory'>Места</div>

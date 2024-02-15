@@ -42,11 +42,11 @@ const Footer = () => {
             >
                 <img src={gorod} alt='Северный город - logo' />
             </a>
-            <div className={classes.addresses}>
-                <p>Наш адрес: 663302, Красноярский край, </p>
-                <p>г. Норильск, ул. Комсомольская, д. 33А</p>
-                <p>E-mail: test@test.com </p>
-            </div>
+            {/*<div className={classes.addresses}>*/}
+            {/*    <p>Наш адрес: 663302, Красноярский край, </p>*/}
+            {/*    <p>г. Норильск, ул. Комсомольская, д. 33А</p>*/}
+            {/*    <p>E-mail: test@test.com </p>*/}
+            {/*</div>*/}
         </div>
     );
 };

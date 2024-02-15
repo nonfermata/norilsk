@@ -18,7 +18,7 @@ const About = () => {
     return (
         <>
             <div className={classes.audioBox}>
-                <audio controls autoPlay src={audioGorod}></audio>
+                <audio controls src={audioGorod}></audio>
             </div>
             <div className={classes.aboutWrap}>
                 <div className={classes.aboutLeftContent}>

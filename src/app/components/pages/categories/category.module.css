@@ -15,3 +15,13 @@
     color: var(--dark-blue);
     font-weight: 500;
 }
+
+@media screen and (max-width: 991px) {
+   .tempList {
+       margin-left: 30px;}
+}
+
+@media screen and (max-width: 480px) {
+   .tempList {
+       margin-left: 15px;}
+}

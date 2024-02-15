@@ -34,7 +34,7 @@ const oganerskaya = {
     bgrImg: oganerskayaBgr,
     monoImg: oganerskayaMono,
     images: [oganerskaya1, oganerskaya2, oganerskaya3, oganerskaya4],
-    photoAuthor: 'МБУ ДО «Оганерская детская школа искусств» («Фейсбук»)'
+    photoAuthor: 'МБУ ДО «Оганерская детская школа искусств»'
 };
 
 export default oganerskaya;

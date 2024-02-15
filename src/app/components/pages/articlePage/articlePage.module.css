@@ -1,4 +1,6 @@
 .articlePageWrap {
+    position: relative;
+    padding-bottom: 41px;
 }
 
 .articleHead {
@@ -7,6 +9,18 @@
     position: relative;
     height: auto;
     border-bottom: 1px solid var(--beige);
+}
+
+.articlesNavWrap {
+    position: absolute;
+    font-size: .9em;
+    top: 10px;
+    right: 50px;
+}
+
+.articlesNavWrapBottom {
+    top: auto;
+    bottom: 10px;
 }
 
 .titleSubtitleWrap {
@@ -115,7 +129,7 @@
     max-width: 400px;
     font-size: .9em;
     font-style: italic;
-    padding: 10px 0 0 40px;
+    padding: 5px 0 0 40px;
 }
 
 .chapterWrap {
@@ -198,6 +212,19 @@
 }
 
 @media screen and (max-width: 991px) {
+    .articlesNavWrap {
+        right: 30px;
+    }
+
+    .articlesNavWrapBottom {
+        top: auto;
+    }
+
+    .titleSubtitleWrap {
+        width: 100%;
+        padding: 40px 50px 30px;
+    }
+
     .chapterText {
         width: 90%;
     }
@@ -208,13 +235,12 @@
 }
 
 @media screen and (max-width: 768px) {
-    .articleHead {
-        display: block;
+    .articlePageWrap {
+        padding-bottom: 56px;
     }
 
-    .titleSubtitleWrap {
-        width: 100%;
-        padding: 30px 50px;
+    .articleHead {
+        display: block;
     }
 
     .mainImgWrap {
@@ -263,8 +289,13 @@
 }
 
 @media screen and (max-width: 480px) {
+    .articlesNavWrap {
+        font-size: .85em;
+        right: 15px;
+    }
+
     .titleSubtitleWrap {
-        padding: 30px 25px;
+        padding: 40px 25px 30px;
     }
 
     .titleArticle {

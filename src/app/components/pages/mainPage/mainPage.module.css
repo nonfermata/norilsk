@@ -72,8 +72,8 @@
 .mainTitleWrap {
     position: absolute;
     font-weight: 400;
-    color: #fff;
-    top: 6vw;
+    color: white;
+    top: 4.5vw;
     left: calc(58vw + 80px);
     text-align: right;
     font-family: var(--serif);
@@ -81,11 +81,20 @@
 
 .mainTitle {
     font-size: 5.12vw;
+    line-height: 1em;
 }
 
 .mainSubTitle {
     font-size: 2.2vw;
     font-style: italic;
+    margin-bottom: 10px;
+}
+
+.mainDescription {
+    font-size: 1.4vw;
+    font-family: var(--sans);
+    padding-top: 10px;
+    border-top: 1px solid var(--light-cyan);
 }
 
 .titleInvisible {
@@ -135,6 +144,16 @@
     opacity: 1;
 }
 
+@media screen and (max-width: 991px) {
+    .mainSubTitle {
+        margin-bottom: 7px;
+    }
+
+    .mainDescription {
+        padding-top: 7px;
+    }
+}
+
 @media screen and (max-width: 640px) {
     .mainPageWrap {
         background-image: url('../../../assets/images/norilsk-main-mobile.png');
@@ -150,7 +169,7 @@
         top: 0;
         left: 0;
         margin: 0 auto;
-        padding-top: 20px;
+        padding-top: 10px;
         text-align: center;
     }
 
@@ -173,8 +192,20 @@
     .mainPageMenu {
         display: none;
     }
+
+    .mainDescription {
+        width: fit-content;
+        font-size: .9em;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width: 480px) {
+    .mainSubTitle {
+        margin-bottom: 5px;
+    }
 
+    .mainDescription {
+        padding-top: 5px;
+    }
 }

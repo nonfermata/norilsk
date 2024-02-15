@@ -8,7 +8,7 @@ const kryshi = {
     cat: 'symbols',
     type: 'A',
     mainTitle: 'Крыши',
-    subTitle: 'Здесь время кажется слишком быстрым',
+    subTitle: 'Глядя на городскую суету сверху…',
     chapters: [
         {
             title: 'Время здесь кажется слишком быстротечным…',
