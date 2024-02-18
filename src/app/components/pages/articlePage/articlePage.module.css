@@ -183,9 +183,39 @@
     color: var(--deep-blue);
 }
 
+.monoImgNormal,
+.monoImgHor {
+    width: 20%;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.monoImgHor {
+    width: 50%;
+}
+
+.imgVert,
+.imgHor {
+    width: 30%;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.imgHor {
+    width: 50%;
+}
+
+.imgCenter {
+    width: 60%;
+    margin: 15px auto 0;
+}
+
 .vinietka {
     width: 150px;
     margin: 20px auto 0;
+    clear: both;
 }
 
 .subArticleWrap {
@@ -292,6 +322,14 @@
     .articlesNavWrap {
         font-size: .85em;
         right: 15px;
+    }
+
+    .articlesNavWrapBottom {
+        right: auto;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 
     .titleSubtitleWrap {

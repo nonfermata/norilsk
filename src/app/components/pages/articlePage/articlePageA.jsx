@@ -1,3 +1,5 @@
+/* eslint-disable indent */
+
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import classes from './articlePage.module.css';
@@ -22,8 +24,6 @@ const ArticlePageA = ({ articleName, handleFade }) => {
         ps,
         mainImg,
         bgrImg,
-        // monoImg,
-        // images,
         photoAuthor
     } = article;
     const isSingle = chapters.length === 1;
@@ -62,7 +62,7 @@ const ArticlePageA = ({ articleName, handleFade }) => {
                     Фотографии: <span className='fw500'>{photoAuthor}</span>
                 </div>
             )}
-            {chapters.map(({ title, author, text }, index) => (
+            {chapters.map(({ title, author, text, monoImg, rgbImg }, index) => (
                 <div key={title} className={classes.chapterWrap}>
                     {!isSingle && (
                         <div className={classes.chapterTitle}>{title}</div>
@@ -71,9 +71,34 @@ const ArticlePageA = ({ articleName, handleFade }) => {
                         Текст: <span className='fw500'>{author}</span>
                     </div>
                     <div className={classes.chapterText}>
-                        {text.map((item, index) => (
-                            <p key={index}>{item}</p>
+                        {text.map((item, pIndex, arr) => (
+                            <>
+                                {pIndex === 1 && monoImg && (
+                                    <img
+                                        className={classes[monoImg.orient]}
+                                        src={monoImg.src}
+                                        alt='image'
+                                    />
+                                )}
+                                {!subArticles &&
+                                    rgbImg &&
+                                    pIndex === arr.length - rgbImg.order && (
+                                        <img
+                                            className={classes[rgbImg.orient]}
+                                            src={rgbImg.src}
+                                            alt='image'
+                                        />
+                                    )}
+                                <p key={pIndex}>{item}</p>
+                            </>
                         ))}
+                        {subArticles && (
+                            <img
+                                className={classes.imgCenter}
+                                src={rgbImg.src}
+                                alt='image'
+                            />
+                        )}
                         {ps && <p className={classes.ps}>{ps}</p>}
                     </div>
                     {subArticles &&

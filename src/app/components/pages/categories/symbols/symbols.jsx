@@ -6,6 +6,7 @@ import symbolsBgr from '../../../../assets/images/symbols-bgr.png';
 import { setBrg } from '../../../../../redux/bgrImgReducer';
 import classes from '../category.module.css';
 import getCategoryList from '../../../../utils/getCategoryList';
+import scrollToTop from '../../../../utils/scrollToTop';
 
 const Symbols = () => {
     const navigate = useNavigate();
@@ -26,6 +27,7 @@ const Symbols = () => {
         setIsVisible(false);
         setTimeout(() => {
             setRerender((prevState) => !prevState);
+            scrollToTop();
             navigate(link);
         }, 200);
     };

@@ -1,9 +1,6 @@
 import oganerskayaBgr from '../../assets/images/articles/bgr/40_oganerskaya_bgr.png';
 import oganerskaya0 from '../../assets/images/articles/40_oganerskaya_0.png';
 import oganerskaya1 from '../../assets/images/articles/40_oganerskaya_1.png';
-import oganerskaya2 from '../../assets/images/articles/40_oganerskaya_2.png';
-import oganerskaya3 from '../../assets/images/articles/40_oganerskaya_3.png';
-import oganerskaya4 from '../../assets/images/articles/40_oganerskaya_4.png';
 import oganerskayaMono from '../../assets/images/articles/40_oganerskaya_mono.png';
 
 const oganerskaya = {
@@ -27,13 +24,13 @@ const oganerskaya = {
                 'Перед выездным концертом зал наполняется разными костюмами, запахом косметики и небольшим волнением. Все бегают, собирают кофры, проверяют количество кокошников и платочков, состояние туфель и морально настраиваются на выступление. Зал нам помогает.',
                 'Бывает, нашему коллективу нужно отрепетировать и выступить в другом зале, например во Дворце культуры комбината. Там прогонка идет совсем иначе, другие зеркала, другой пол, чужие стены…',
                 'В такие моменты понимаешь, насколько все-таки любишь Свой Зал…'
-            ]
+            ],
+            monoImg: { src: oganerskayaMono, orient: 'monoImgNormal' },
+            rgbImg: { src: oganerskaya1, orient: 'imgHor', order: 4 }
         }
     ],
     mainImg: oganerskaya0,
     bgrImg: oganerskayaBgr,
-    monoImg: oganerskayaMono,
-    images: [oganerskaya1, oganerskaya2, oganerskaya3, oganerskaya4],
     photoAuthor: 'МБУ ДО «Оганерская детская школа искусств»'
 };
 

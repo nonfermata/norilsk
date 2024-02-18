@@ -1,8 +1,6 @@
 import zapoliarnikBgr from '../../assets/images/articles/bgr/22_zapoliarnik_bgr.png';
 import zapoliarnik0 from '../../assets/images/articles/22_zapoliarnik_0.png';
 import zapoliarnik1 from '../../assets/images/articles/22_zapoliarnik_1.png';
-import zapoliarnik2 from '../../assets/images/articles/22_zapoliarnik_2.png';
-import zapoliarnikMono from '../../assets/images/articles/22_zapoliarnik_mono.png';
 
 const zapoliarnik = {
     id: '22',
@@ -19,13 +17,13 @@ const zapoliarnik = {
                 'Кто-то скажет: а как же спорт? Ну, кому-то он важен, но не мне. Я сюда прихожу за иным. Наблюдать за природой всегда интересно. Это дарит душе успокоение и понимание самой жизни, ее биоритмов. Мы иногда гуляли там с родителями. Помню это ощущение волшебства, когда они говорили: «Кристин, собирайся, пойдем на “Заполярник”».',
                 'Я часто приходила туда за притоком вдохновения, когда не складывались новые стихи, и за успокоением.',
                 'Красивые изгибы ветвей, припорошенных снегом, дорожки с лавочками, на которых редко кто сидит, завораживающее одиночество — вот в чем я вижу прекрасное. Я никогда не замечала тут грустных или усталых людей и сама ни разу не была здесь усталой или печальной. Атмосфера этого места обволакивает и дарует то, что ты ищешь, — покой, безмятежное одиночество, счастье.'
-            ]
+            ],
+            // monoImg: { src: zapoliarnikMono, orient: 'monoImgNormal' },
+            rgbImg: { src: zapoliarnik1, orient: 'imgVert', order: 3 }
         }
     ],
     mainImg: zapoliarnik0,
-    bgrImg: zapoliarnikBgr,
-    monoImg: zapoliarnikMono,
-    images: [zapoliarnik1, zapoliarnik2]
+    bgrImg: zapoliarnikBgr
 };
 
 export default zapoliarnik;
