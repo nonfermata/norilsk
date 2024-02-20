@@ -1,6 +1,6 @@
 /* eslint-disable indent */
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import classes from './articlePage.module.css';
 import allBook from '../../../data/book/allBook';
@@ -9,6 +9,16 @@ import vinietka from '../../../assets/images/vinietka.png';
 import ArticlesNav from '../../ui/articlesNav/articlesNav';
 
 const ArticlePageA = ({ articleName, handleFade }) => {
+    const [artTitles, setArtTitles] = useState({});
+    useEffect(() => {
+        setArtTitles({});
+        setTimeout(() => {
+            setArtTitles({
+                title: classes.titleArticle,
+                subTitle: classes.subTitle
+            });
+        }, 11);
+    }, [articleName]);
     const dispatch = useDispatch();
     const article = allBook.find((item) => articleName === item.name);
     const {
@@ -41,8 +51,8 @@ const ArticlePageA = ({ articleName, handleFade }) => {
                     className={classes.titleSubtitleWrap}
                     style={{ backgroundImage: 'url(' + bgrImg + ')' }}
                 >
-                    <div className={classes.titleArticle}>{mainTitle}</div>
-                    <div className={classes.subTitle}>
+                    <div className={artTitles.title}>{mainTitle}</div>
+                    <div className={artTitles.subTitle}>
                         {isSingle ? chapters[0].title : subTitle}
                     </div>
                 </div>
