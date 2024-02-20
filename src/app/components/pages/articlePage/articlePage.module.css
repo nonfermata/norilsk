@@ -287,6 +287,24 @@
         width: 100%;
         padding: 30px 30px 0 30px;
     }
+
+    .monoImgNormal {
+        width: 30%;
+    }
+
+    .imgVert {
+        width: 40%;
+    }
+
+    .imgHor {
+        float: none;
+        margin: 20px auto;
+        width: 70%;
+    }
+
+    .imgCenter {
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -315,6 +333,33 @@
 
     .chapterText p {
         text-indent: 20px;
+    }
+
+    .monoImgNormal {
+        width: 50%;
+        float: none;
+        margin: 20px auto;
+    }
+
+    .monoImgHor {
+        width: 70%;
+        float: none;
+        margin: 20px auto;
+    }
+
+    .imgVert {
+        width: 60%;
+        float: none;
+        margin: 20px auto;
+    }
+
+    .imgHor {
+        float: none;
+        width: 80%;
+    }
+
+    .imgCenter {
+        width: 80%;
     }
 }
 
@@ -367,6 +412,31 @@
 
     .photoAuthor {
         padding-left: 20px;
+    }
+
+    .monoImgNormal {
+        width: 60%;
+    }
+
+    .monoImgHor {
+        width: 80%;
+    }
+
+    .imgVert {
+        width: 80%;
+    }
+
+    .imgHor {
+        float: none;
+        width: 100%;
+    }
+
+    .imgCenter {
+        width: 90%;
+    }
+
+    .subArticleWrap {
+        width: 85%;
     }
 }
 
