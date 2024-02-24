@@ -8,7 +8,7 @@ import { setBrg } from '../../../../redux/bgrImgReducer';
 import vinietka from '../../../assets/images/vinietka.png';
 import ArticlesNav from '../../ui/articlesNav/articlesNav';
 
-const ArticlePageA = ({ articleName, handleFade }) => {
+const ArticlePage = ({ articleName, handleFade }) => {
     const [artTitles, setArtTitles] = useState({});
     useEffect(() => {
         setArtTitles({});
@@ -23,9 +23,6 @@ const ArticlePageA = ({ articleName, handleFade }) => {
     const article = allBook.find((item) => articleName === item.name);
     const {
         id,
-        // name,
-        // type,
-        // cat,
         mainTitle,
         subTitle,
         vrezka,
@@ -145,4 +142,4 @@ const ArticlePageA = ({ articleName, handleFade }) => {
     );
 };
 
-export default ArticlePageA;
+export default ArticlePage;

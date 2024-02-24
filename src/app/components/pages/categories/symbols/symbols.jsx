@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
-import ArticlePageA from '../../articlePage/articlePageA';
+import ArticlePage from '../../articlePage/articlePage';
 import symbolsBgr from '../../../../assets/images/symbols-bgr.png';
 import { setBrg } from '../../../../../redux/bgrImgReducer';
 import classes from '../category.module.css';
@@ -34,7 +34,7 @@ const Symbols = () => {
     return (
         <div className={isVisible ? 'visible' : 'invisible'}>
             {symbol ? (
-                <ArticlePageA articleName={symbol} handleFade={crossfade} />
+                <ArticlePage articleName={symbol} handleFade={crossfade} />
             ) : (
                 <>
                     <div className='titleCategory'>Символы</div>

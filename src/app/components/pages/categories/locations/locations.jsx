@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
-import ArticlePageA from '../../articlePage/articlePageA';
+import ArticlePage from '../../articlePage/articlePage';
 import locationsBgr from '../../../../assets/images/locations-bgr.png';
 import { setBrg } from '../../../../../redux/bgrImgReducer';
 import classes from '../category.module.css';
@@ -34,7 +34,7 @@ const Locations = () => {
     return (
         <div className={isVisible ? 'visible' : 'invisible'}>
             {location ? (
-                <ArticlePageA articleName={location} handleFade={crossfade} />
+                <ArticlePage articleName={location} handleFade={crossfade} />
             ) : (
                 <>
                     <div className='titleCategory'>Места</div>
