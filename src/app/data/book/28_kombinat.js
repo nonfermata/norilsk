@@ -2,12 +2,13 @@ import kombinatBgr from '../../assets/images/articles/bgr/28_kombinat_bgr.png';
 import kombinat0 from '../../assets/images/articles/28_kombinat_0.png';
 import kombinat1 from '../../assets/images/articles/28_kombinat_1.png';
 import kombinatMono from '../../assets/images/articles/28_kombinat_mono.png';
+import kombinatIcon from '../../assets/images/icons/kombinat_icon.png';
 
 const kombinat = {
     id: '28',
     name: 'kombinat',
     cat: 'locations',
-    type: 'A',
+    icon: kombinatIcon,
     mainTitle: 'Комбинат, «Надежда», плавильный цех',
     chapters: [
         {

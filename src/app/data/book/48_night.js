@@ -2,12 +2,13 @@ import nightBgr from '../../assets/images/articles/bgr/48_night_bgr.png';
 import night0 from '../../assets/images/articles/48_night_0.png';
 import night1 from '../../assets/images/articles/48_night_1.png';
 import night2 from '../../assets/images/articles/48_night_2.png';
+import nightIcon from '../../assets/images/icons/night_icon.png';
 
 const night = {
     id: '48',
     name: 'night',
     cat: 'symbols',
-    type: 'A',
+    icon: nightIcon,
     mainTitle: 'Полярная ночь',
     subTitle: 'Непростая, таинственная, немного мистическая…',
     chapters: [

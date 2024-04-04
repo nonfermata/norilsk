@@ -2,12 +2,13 @@ import sianieBgr from '../../assets/images/articles/bgr/52_sianie_bgr.png';
 import sianie0 from '../../assets/images/articles/52_sianie_0.png';
 import sianie1 from '../../assets/images/articles/52_sianie_1.png';
 import sianieMono from '../../assets/images/articles/52_sianie_mono.png';
+import sianieIcon from '../../assets/images/icons/sianie_icon.png';
 
 const sianie = {
     id: '52',
     name: 'sianie',
     cat: 'symbols',
-    type: 'A',
+    icon: sianieIcon,
     mainTitle: 'Северное сияние',
     subTitle: 'Волшебство для каждого',
     chapters: [

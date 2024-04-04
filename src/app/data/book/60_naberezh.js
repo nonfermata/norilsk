@@ -2,12 +2,13 @@ import naberezhBgr from '../../assets/images/articles/bgr/60_naberezh_bgr.png';
 import naberezh0 from '../../assets/images/articles/60_naberezh_0.png';
 import naberezh1 from '../../assets/images/articles/60_naberezh_1.png';
 import naberezhMono from '../../assets/images/articles/60_naberezh_mono.png';
+import naberezhIcon from '../../assets/images/icons/naberezh_icon.png';
 
 const naberezh = {
     id: '60',
     name: 'naberezh',
     cat: 'locations',
-    type: 'A',
+    icon: naberezhIcon,
     mainTitle: 'У набережной Урванцева',
     chapters: [
         {

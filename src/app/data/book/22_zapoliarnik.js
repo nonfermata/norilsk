@@ -1,12 +1,13 @@
 import zapoliarnikBgr from '../../assets/images/articles/bgr/22_zapoliarnik_bgr.png';
 import zapoliarnik0 from '../../assets/images/articles/22_zapoliarnik_0.png';
 import zapoliarnik1 from '../../assets/images/articles/22_zapoliarnik_1.png';
+import zapoliarnikIcon from '../../assets/images/icons/zapoliarnik_icon.png';
 
 const zapoliarnik = {
     id: '22',
     name: 'zapoliarnik',
     cat: 'locations',
-    type: 'A',
+    icon: zapoliarnikIcon,
     mainTitle: 'Стадион «Заполярник»',
     chapters: [
         {

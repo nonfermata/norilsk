@@ -38,13 +38,21 @@ const Symbols = () => {
             ) : (
                 <>
                     <div className='titleCategory'>Символы</div>
-                    <ul className={classes.tempList}>
-                        {symbolsList.map(({ id, name, mainTitle }) => (
-                            <li key={id} onClick={() => crossfade(name)}>
-                                {mainTitle}
-                            </li>
+                    <div className={classes.iconsWrap}>
+                        {symbolsList.map(({ id, name, mainTitle, icon }) => (
+                            <div
+                                className={classes.iconWrap}
+                                key={id}
+                                title={mainTitle}
+                                onClick={() => crossfade(name)}
+                            >
+                                <img src={icon} alt='image' />
+                                <div className={classes.iconLabel}>
+                                    {mainTitle}
+                                </div>
+                            </div>
                         ))}
-                    </ul>
+                    </div>
                 </>
             )}
         </div>

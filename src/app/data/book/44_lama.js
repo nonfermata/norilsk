@@ -2,12 +2,13 @@ import lamaBgr from '../../assets/images/articles/bgr/44_lama_bgr.png';
 import lama0 from '../../assets/images/articles/44_lama_0.png';
 import lama1 from '../../assets/images/articles/44_lama_1.png';
 import lamaMono from '../../assets/images/articles/44_lama_mono.png';
+import lamaIcon from '../../assets/images/icons/lama_icon.png';
 
 const lama = {
     id: '44',
     name: 'lama',
     cat: 'locations',
-    type: 'A',
+    icon: lamaIcon,
     mainTitle: 'Озеро Лама',
     chapters: [
         {

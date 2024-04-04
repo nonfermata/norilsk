@@ -2,12 +2,13 @@ import mostBgr from '../../assets/images/articles/bgr/34_most_bgr.png';
 import most0 from '../../assets/images/articles/34_most_0.png';
 import most1 from '../../assets/images/articles/34_most_1.png';
 import mostMono from '../../assets/images/articles/34_most_mono.png';
+import mostIcon from '../../assets/images/icons/most_icon.png';
 
 const most = {
     id: '34',
     name: 'most',
     cat: 'locations',
-    type: 'A',
+    icon: mostIcon,
     mainTitle: 'Мост на реке Норильской',
     chapters: [
         {

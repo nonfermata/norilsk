@@ -1,3 +1,172 @@
 .mediaschoolWrap {
-    margin-left: 50px;
+    margin: 0 0 50px 50px;
+}
+
+.blockTitleHead {
+    display: flex;
+    gap: 20px;
+    font-size: 1.15em;
+    font-weight: 500;
+}
+
+.blockTitle {
+    color: var(--dark-green-blue);
+    position: relative;
+    width: fit-content;
+}
+
+.blockTitle::after {
+    content: '';
+    position: absolute;
+    top: 110%;
+    left: 20px;
+    z-index: 100;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top: 7px solid var(--dark-green-blue);
+}
+
+.blockLink {
+    width: auto;
+    color: var(--inactive-green-blue);
+    opacity: .7;
+    transition: .2s ease all;
+}
+
+.blockLink:hover {
+    opacity: 1;
+}
+
+.infoBlock {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.baseText {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.subPar {
+    margin-bottom: 5px;
+}
+
+.greetings {
+    font-weight: 600;
+    color: var(--dark-blue);
+    text-align: center;
+}
+
+.coda {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.welcome {
+    font-weight: 600;
+    text-align: center;
+    color: var(--dark-blue);
+}
+
+.references {
+    text-align: center;
+}
+
+.officialImage {
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid var(--light-grey);
+    box-shadow: 5px 5px 15px 0 var(--light-grey);
+}
+
+.nonofficialImgWrap {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nonofficialImgWrap img {
+    width: 45%;
+    border: 1px solid var(--light-grey);
+    box-shadow: 5px 5px 15px 0 var(--light-grey);
+}
+
+.socialNets {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.socialNet {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-weight: 500;
+}
+
+.socialNet img {
+    width: 40px;
+}
+
+.infoBlock a {
+    color: var(--dark-blue);
+    opacity: .8;
+    transition: .2s ease all;
+}
+
+.infoBlock a:hover {
+    opacity: 1;
+}
+
+.noCharge {
+    text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+    .mediaschoolWrap {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .officialImage {
+        width: 80%;
+    }
+
+    .nonofficialImgWrap {
+        gap: 2%;
+    }
+
+    .nonofficialImgWrap img {
+        width: 49%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .officialImage {
+        width: 100%;
+    }
+
+    .nonofficialImgWrap {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nonofficialImgWrap img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mediaschoolWrap {
+        margin-left: 15px;
+    }
+
+    .blockTitleHead {
+        font-size: 1.05em;
+    }
 }

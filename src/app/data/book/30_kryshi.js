@@ -2,12 +2,13 @@ import kryshiBgr from '../../assets/images/articles/bgr/30_kryshi_bgr.png';
 import kryshi0 from '../../assets/images/articles/30_kryshi_0.png';
 import kryshi1 from '../../assets/images/articles/30_kryshi_1.png';
 import kryshi2 from '../../assets/images/articles/30_kryshi_2.png';
+import kryshiIcon from '../../assets/images/icons/kryshi_icon.png';
 
 const kryshi = {
     id: '30',
     name: 'kryshi',
     cat: 'symbols',
-    type: 'A',
+    icon: kryshiIcon,
     mainTitle: 'Крыши',
     subTitle: 'Глядя на городскую суету сверху…',
     chapters: [

@@ -2,12 +2,13 @@ import karierBgr from '../../assets/images/articles/bgr/24_karier_bgr.png';
 import karier0 from '../../assets/images/articles/24_karier_0.png';
 import karier1 from '../../assets/images/articles/24_karier_1.png';
 import karierMono from '../../assets/images/articles/24_karier_mono.png';
+import karierIcon from '../../assets/images/icons/karier_icon.png';
 
 const karier = {
     id: '24',
     name: 'karier',
     cat: 'locations',
-    type: 'A',
+    icon: karierIcon,
     mainTitle: 'Карьер',
     chapters: [
         {

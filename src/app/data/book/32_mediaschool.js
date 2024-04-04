@@ -2,12 +2,13 @@ import mediaschoolBgr from '../../assets/images/articles/bgr/32_mediaschool_bgr.
 import mediaschool0 from '../../assets/images/articles/32_mediaschool_0.png';
 import mediaschool1 from '../../assets/images/articles/32_mediaschool_1.png';
 import mediaschoolMono from '../../assets/images/articles/32_mediaschool_mono.png';
+import mediaschoolIcon from '../../assets/images/icons/mediaschool_icon.png';
 
 const mediaschool = {
     id: '32',
     name: 'mediaschool',
     cat: 'locations',
-    type: 'A',
+    icon: mediaschoolIcon,
     mainTitle: 'Медиашкола в\u00A0«Северном\u00A0городе»',
     chapters: [
         {

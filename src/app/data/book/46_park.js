@@ -2,12 +2,13 @@ import parkBgr from '../../assets/images/articles/bgr/46_park_bgr.png';
 import park0 from '../../assets/images/articles/46_park_0.png';
 import park1 from '../../assets/images/articles/46_park_1.png';
 import parkMono from '../../assets/images/articles/46_park_mono.png';
+import parkIcon from '../../assets/images/icons/park_icon.png';
 
 const park = {
     id: '46',
     name: 'park',
     cat: 'locations',
-    type: 'A',
+    icon: parkIcon,
     mainTitle: 'Парк у «Черного тюльпана» и\u00A0трубы',
     subTitle: 'Здесь видишь не внешность Норильска',
     chapters: [

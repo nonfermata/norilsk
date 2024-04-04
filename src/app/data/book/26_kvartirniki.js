@@ -2,12 +2,13 @@ import kvartirnikiBgr from '../../assets/images/articles/bgr/26_kvartirniki_bgr.
 import kvartirniki0 from '../../assets/images/articles/26_kvartirniki_0.png';
 import kvartirniki1 from '../../assets/images/articles/26_kvartirniki_1.png';
 import kvartirnikiMono from '../../assets/images/articles/26_kvartirniki_mono.png';
+import kvartirnikiIcon from '../../assets/images/icons/kvartirniki_icon.png';
 
 const kvartirniki = {
     id: '26',
     name: 'kvartirniki',
     cat: 'symbols',
-    type: 'A',
+    icon: kvartirnikiIcon,
     mainTitle: 'Квартирники',
     chapters: [
         {

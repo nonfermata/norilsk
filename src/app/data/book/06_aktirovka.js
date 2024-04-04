@@ -2,12 +2,13 @@ import aktirovkaBgr from '../../assets/images/articles/bgr/06_aktirovka_bgr.png'
 import aktirovka0 from '../../assets/images/articles/06_aktirovka_0.png';
 import aktirovka1 from '../../assets/images/articles/06_aktirovka_1.png';
 import aktirovkaMono from '../../assets/images/articles/06_aktirovka_mono.png';
+import aktirovkaIcon from '../../assets/images/icons/aktirovka_icon.png';
 
 const aktirovka = {
     id: '06',
     name: 'aktirovka',
     cat: 'symbols',
-    type: 'A',
+    icon: aktirovkaIcon,
     mainTitle: 'Актировка',
     chapters: [
         {

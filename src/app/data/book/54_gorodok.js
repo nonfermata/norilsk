@@ -2,12 +2,13 @@ import gorodokBgr from '../../assets/images/articles/bgr/54_gorodok_bgr.png';
 import gorodok0 from '../../assets/images/articles/54_gorodok_0.png';
 import gorodok1 from '../../assets/images/articles/54_gorodok_1.png';
 import gorodokMono from '../../assets/images/articles/54_gorodok_mono.png';
+import gorodokIcon from '../../assets/images/icons/gorodok_icon.png';
 
 const gorodok = {
     id: '54',
     name: 'gorodok',
     cat: 'symbols',
-    type: 'A',
+    icon: gorodokIcon,
     mainTitle: 'Снежный городок',
     chapters: [
         {

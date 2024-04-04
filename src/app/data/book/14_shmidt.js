@@ -2,12 +2,13 @@ import shmidtBgr from '../../assets/images/articles/bgr/14_shmidt_bgr.png';
 import shmidt0 from '../../assets/images/articles/14_shmidt_0.png';
 import shmidt1 from '../../assets/images/articles/14_shmidt_1.png';
 import shmidtMono from '../../assets/images/articles/14_shmidt_mono.png';
+import shmidtIcon from '../../assets/images/icons/shmidt_icon.png';
 
 const shmidt = {
     id: '14',
     name: 'shmidt',
     cat: 'locations',
-    type: 'A',
+    icon: shmidtIcon,
     mainTitle: 'Гора Шмидта',
     chapters: [
         {

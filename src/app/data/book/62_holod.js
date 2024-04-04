@@ -1,12 +1,13 @@
 import holodBgr from '../../assets/images/articles/bgr/62_holod_bgr.png';
 import holod0 from '../../assets/images/articles/62_holod_0.png';
 import holod1 from '../../assets/images/articles/62_holod_1.png';
+import holodIcon from '../../assets/images/icons/holod_icon.png';
 
 const holod = {
     id: '62',
     name: 'holod',
     cat: 'symbols',
-    type: 'A',
+    icon: holodIcon,
     mainTitle: 'Холод',
     chapters: [
         {

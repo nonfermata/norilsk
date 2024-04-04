@@ -2,12 +2,13 @@ import theatreBgr from '../../assets/images/articles/bgr/58_theatre_bgr.png';
 import theatre0 from '../../assets/images/articles/58_theatre_0.png';
 import theatre1 from '../../assets/images/articles/58_theatre_1.png';
 import theatreMono from '../../assets/images/articles/58_theatre_mono.png';
+import theatreIcon from '../../assets/images/icons/theatre_icon.png';
 
 const theatre = {
     id: '58',
     name: 'theatre',
     cat: 'locations',
-    type: 'A',
+    icon: theatreIcon,
     mainTitle: 'Театр драмы им. Владимира Маяковского',
     subTitle: 'Один из лучших в Красноярском крае',
     chapters: [

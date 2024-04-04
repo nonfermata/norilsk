@@ -38,13 +38,28 @@ const Locations = () => {
             ) : (
                 <>
                     <div className='titleCategory'>Места</div>
-                    <ul className={classes.tempList}>
-                        {locationsList.map(({ id, name, mainTitle }) => (
-                            <li key={id} onClick={() => crossfade(name)}>
-                                {mainTitle}
-                            </li>
+                    {/*<ul className={classes.tempList}>*/}
+                    {/*    {locationsList.map(({ id, name, mainTitle }) => (*/}
+                    {/*        <li key={id} onClick={() => crossfade(name)}>*/}
+                    {/*            {mainTitle}*/}
+                    {/*        </li>*/}
+                    {/*    ))}*/}
+                    {/*</ul>*/}
+                    <div className={classes.iconsWrap}>
+                        {locationsList.map(({ id, name, mainTitle, icon }) => (
+                            <div
+                                className={classes.iconWrap}
+                                key={id}
+                                title={mainTitle}
+                                onClick={() => crossfade(name)}
+                            >
+                                <img src={icon} alt='image' />
+                                <div className={classes.iconLabel}>
+                                    {mainTitle}
+                                </div>
+                            </div>
                         ))}
-                    </ul>
+                    </div>
                 </>
             )}
         </div>

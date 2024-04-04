@@ -1,0 +1,55 @@
+.gorodWrap {
+    margin: 0 0 50px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mainPhoto {
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid var(--light-grey);
+    box-shadow: 5px 5px 15px 0 var(--light-grey);
+}
+
+.baseText {
+    text-indent: 20px;
+    text-align: justify;
+}
+
+.logoWrap {
+    display: block;
+    width: 220px;
+    padding: 10px 15px;
+    border: 1px solid var(--light-grey);
+    border-radius: 4px;
+    margin: 10px auto 0;
+}
+
+.logoWrap img {
+    width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+    .gorodWrap {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mainPhoto {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .mainPhoto {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gorodWrap {
+        margin-left: 15px;
+    }
+}

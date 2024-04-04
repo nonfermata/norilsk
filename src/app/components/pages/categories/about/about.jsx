@@ -3,7 +3,7 @@ import aboutBgr from '../../../../assets/images/about-bgr.png';
 import classes from './about.module.css';
 import { useDispatch } from 'react-redux';
 import { setBrg } from '../../../../../redux/bgrImgReducer';
-import about from '../../../../data/book/02_about';
+import about from '../../../../data/about';
 import rightImg from '../../../../assets/images/about-right.png';
 import SubMenu from './subMenu/subMenu';
 import { useParams } from 'react-router-dom';
@@ -44,8 +44,9 @@ const About = () => {
                                 связей компании «Норникель», медиакомпании
                                 «Северный город» и&nbsp;лично Андрею
                                 Кирпичникову, Сергею Панченко, Татьяне
-                                Смирновой, Занде Бусловой, Вере Калабековой,
-                                Артуру Калабекову и&nbsp;Вере Скорницкой!
+                                Смирновой, Занде Бусловой, Елене Олеговне
+                                Сергеевой, Вере Калабековой, Артуру Калабекову,
+                                Вере Скорницкой и&nbsp; Ирине Золотухиной!
                             </div>
                             <div className={classes.dedication}>
                                 Эту книгу мы посвящаем памяти нашего большого

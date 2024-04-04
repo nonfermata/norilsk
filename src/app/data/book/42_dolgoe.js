@@ -2,12 +2,13 @@ import dolgoeBgr from '../../assets/images/articles/bgr/42_dolgoe_bgr.png';
 import dolgoe0 from '../../assets/images/articles/42_dolgoe_0.png';
 import dolgoe1 from '../../assets/images/articles/42_dolgoe_1.png';
 import dolgoeMono from '../../assets/images/articles/42_dolgoe_mono.png';
+import dolgoeIcon from '../../assets/images/icons/dolgoe_icon.png';
 
 const dolgoe = {
     id: '42',
     name: 'dolgoe',
     cat: 'locations',
-    type: 'A',
+    icon: dolgoeIcon,
     mainTitle: 'Озеро Долгое',
     subTitle: 'Почувствовать себя по-настоящему живым',
     chapters: [

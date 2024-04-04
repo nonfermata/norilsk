@@ -2,12 +2,13 @@ import museumBgr from '../../assets/images/articles/bgr/38_museum_bgr.png';
 import museum0 from '../../assets/images/articles/38_museum_0.png';
 import museum1 from '../../assets/images/articles/38_museum_1.png';
 import museumMono from '../../assets/images/articles/38_museum_mono.png';
+import museumIcon from '../../assets/images/icons/museum_icon.png';
 
 const museum = {
     id: '38',
     name: 'museum',
     cat: 'locations',
-    type: 'A',
+    icon: museumIcon,
     mainTitle: 'Музей Норильска',
     chapters: [
         {

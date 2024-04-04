@@ -2,12 +2,13 @@ import taxiBgr from '../../assets/images/articles/bgr/56_taxi_bgr.png';
 import taxi0 from '../../assets/images/articles/56_taxi_0.png';
 import taxi1 from '../../assets/images/articles/56_taxi_1.png';
 import taxi2 from '../../assets/images/articles/56_taxi_2.png';
+import taxiIcon from '../../assets/images/icons/taxi_icon.png';
 
 const taxi = {
     id: '56',
     name: 'taxi',
     cat: 'symbols',
-    type: 'A',
+    icon: taxiIcon,
     mainTitle: 'Такси',
     subTitle: 'Психологи и коучи',
     vrezka: 'Такси для норильчан намного актуальнее, чем для жителей всех остальных российских городов.',

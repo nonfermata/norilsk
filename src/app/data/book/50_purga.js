@@ -1,12 +1,13 @@
 import purgaBgr from '../../assets/images/articles/bgr/50_purga_bgr.png';
 import purga0 from '../../assets/images/articles/50_purga_0.png';
 import purga1 from '../../assets/images/articles/50_purga_1.png';
+import purgaIcon from '../../assets/images/icons/purga_icon.png';
 
 const purga = {
     id: '50',
     name: 'purga',
     cat: 'symbols',
-    type: 'A',
+    icon: purgaIcon,
     mainTitle: 'Пурга',
     vrezka: 'Трасса между городом и его воздушными воротами интересна сама по себе. Проезжаешь кучу достопримечательностей. Старый мост через реку Амбарную и паровоз на нем. Символическую границу Таймыра у поворота на Дудинку. Территорию старого аэродрома с самолетом у завода «Надежда»… Но еще интереснее то, что иногда эта дорога открывает важные истины.',
     chapters: [

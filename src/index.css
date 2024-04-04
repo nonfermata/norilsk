@@ -14,7 +14,9 @@
     --grey-blue: #afd2dd;
     --blue-opacity: #2e65c399;
     --blue-menu-opacity: #1f3866dd;
-    --dark-grey-blue: #599eb3;
+    --dark-grey-blue: #479ab3;
+    --dark-green-blue: #468c89;
+    --inactive-green-blue: #51a29e;
     --blue: #2e65c3;
     --dark-blue: #003899;
     --deep-blue: #122342;
@@ -48,6 +50,14 @@
 
 .green {
     color: var(--green);
+}
+
+.grey {
+    color: var(--dark-grey);
+}
+
+.center {
+    text-align: center;
 }
 
 * {

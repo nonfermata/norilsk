@@ -2,12 +2,13 @@ import oganerskayaBgr from '../../assets/images/articles/bgr/40_oganerskaya_bgr.
 import oganerskaya0 from '../../assets/images/articles/40_oganerskaya_0.png';
 import oganerskaya1 from '../../assets/images/articles/40_oganerskaya_1.png';
 import oganerskayaMono from '../../assets/images/articles/40_oganerskaya_mono.png';
+import oganerskayaIcon from '../../assets/images/icons/oganerskaya_icon.png';
 
 const oganerskaya = {
     id: '40',
     name: 'oganerskaya',
     cat: 'locations',
-    type: 'A',
+    icon: oganerskayaIcon,
     mainTitle: 'Оганерская детская школа искусств',
     vrezka: 'Для меня любимое место города — родной зал ансамбля народного танца «Оганер», расположенный в детской школе искусств. Здесь учат танцевать, сюда я приходила на протяжении 10 лет. Зал наш большой, светлый, весь в зеркалах, и в нем чувствуется сила. Сила духа, сила движения, сила музыки. И мощнейшая сила семьи! Мы — ансамбль, мы — семья, а зал — наш дом.',
     chapters: [

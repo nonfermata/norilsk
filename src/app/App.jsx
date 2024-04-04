@@ -8,13 +8,13 @@ import ResetButton from './components/common/resetButton/resetButton';
 import { getBurgerStatus, toggleBurger } from '../redux/burgerReducer';
 
 const App = () => {
-    if (!localStorage.getItem('secret')) {
-        let word = prompt('Введите заветное слово:');
-        while (word !== 'Выдра') {
-            word = prompt('Это не оно. Введите заветное слово:');
-        }
-        localStorage.setItem('secret', 'ok');
-    }
+    // if (!localStorage.getItem('secret')) {
+    //     let word = prompt('Введите заветное слово:');
+    //     while (word !== 'Выдра') {
+    //         word = prompt('Это не оно. Введите заветное слово:');
+    //     }
+    //     localStorage.setItem('secret', 'ok');
+    // }
 
     const dispatch = useDispatch();
     const isBurgerMenuActive = useSelector(getBurgerStatus());
@@ -28,7 +28,7 @@ const App = () => {
             <Routes>
                 <Route path='/' element={<MainPage />} />
                 <Route
-                    path='about/:subCutName?'
+                    path='about/:subCutName?/:schoolBlockName?'
                     element={<Category category={'about'} />}
                 />
                 <Route

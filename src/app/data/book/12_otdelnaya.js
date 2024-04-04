@@ -2,12 +2,13 @@ import otdelnayaBgr from '../../assets/images/articles/bgr/12_otdelnaya_bgr.png'
 import otdelnaya0 from '../../assets/images/articles/12_otdelnaya_0.png';
 import otdelnaya1 from '../../assets/images/articles/12_otdelnaya_1.png';
 import otdelnayaMono from '../../assets/images/articles/12_otdelnaya_mono.png';
+import otdelnayaIcon from '../../assets/images/icons/otdelnaya_icon.png';
 
 const otdelnaya = {
     id: '12',
     name: 'otdelnaya',
     cat: 'locations',
-    type: 'A',
+    icon: otdelnayaIcon,
     mainTitle: 'Гора Отдельная. Горнолыжка',
     chapters: [
         {

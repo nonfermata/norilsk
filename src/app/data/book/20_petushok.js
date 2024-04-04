@@ -1,12 +1,13 @@
 import petushokBgr from '../../assets/images/articles/bgr/20_petushok_bgr.png';
 import petushok0 from '../../assets/images/articles/20_petushok_0.png';
 import petushok1 from '../../assets/images/articles/20_petushok_1.png';
+import petushokIcon from '../../assets/images/icons/petushok_icon.png';
 
 const petushok = {
     id: '20',
     name: 'petushok',
     cat: 'locations',
-    type: 'A',
+    icon: petushokIcon,
     mainTitle: 'Детский сад «Золотой\u00A0петушок» в\u00A0Талнахе',
     chapters: [
         {
