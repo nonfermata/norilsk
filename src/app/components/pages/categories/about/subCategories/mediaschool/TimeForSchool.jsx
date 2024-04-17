@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import mediaschool from '../../../../../../data/mediaschool';
 import vk from '../../../../../../assets/images/logotypes/vk_icon.png';
 
-const SchoolNonofficial = () => {
+const TimeForSchool = () => {
     const { text, photos } = mediaschool.nonofficial;
     return (
         <>
@@ -14,7 +14,7 @@ const SchoolNonofficial = () => {
                 </Link>
                 <span className='fw300 grey'>|</span>
                 <div className={classes.blockTitle}>
-                    Прийти <span className='no_wrap'>в школу</span>
+                    Пора <span className='no_wrap'>в школу!</span>
                 </div>
             </div>
             <div className={classes.infoBlock}>
@@ -36,7 +36,10 @@ const SchoolNonofficial = () => {
                                 </div>
                             ))}
                         </div>
-                        <div className={classes.nonofficialImgWrap}>
+                        <div
+                            key={index * 2 + 1}
+                            className={classes.nonofficialImgWrap}
+                        >
                             <img
                                 src={photos[(index + 1) * 2 - 2]}
                                 alt='Image'
@@ -92,4 +95,4 @@ const SchoolNonofficial = () => {
     );
 };
 
-export default SchoolNonofficial;
+export default TimeForSchool;

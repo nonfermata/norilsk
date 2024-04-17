@@ -9,6 +9,7 @@ const otdelnaya = {
     name: 'otdelnaya',
     cat: 'locations',
     icon: otdelnayaIcon,
+    geo: { top: 4, left: 85 },
     mainTitle: 'Гора Отдельная. Горнолыжка',
     chapters: [
         {

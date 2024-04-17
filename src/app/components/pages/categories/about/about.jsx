@@ -11,7 +11,7 @@ import SubCategory from './subCategories/subCategory';
 import audioGorod from '../../../../assets/audio/neobitaemy-gorod.mp3';
 
 const About = () => {
-    const { subCutName } = useParams();
+    const { subCutName, schoolBlockName } = useParams();
     const dispatch = useDispatch();
     dispatch(setBrg(aboutBgr));
     const { vrezka, text } = about;
@@ -32,8 +32,8 @@ const About = () => {
                         <>
                             <p className={classes.vrezka}>{vrezka}</p>
                             <div className={classes.text}>
-                                {text.map((item, index) => (
-                                    <p key={index}>{item}</p>
+                                {text.map((item) => (
+                                    <p key={item}>{item}</p>
                                 ))}
                             </div>
                             <div className={classes.endLine}></div>
@@ -60,6 +60,18 @@ const About = () => {
                 </div>
                 <div className={classes.aboutRightContent}>
                     <img src={rightImg} alt='image' />
+                    {subCutName === 'mediaschool' && (
+                        <>
+                            <img src={rightImg} alt='image' />
+                            <img src={rightImg} alt='image' />
+                            {!schoolBlockName && (
+                                <>
+                                    <img src={rightImg} alt='image' />
+                                    <img src={rightImg} alt='image' />
+                                </>
+                            )}
+                        </>
+                    )}
                 </div>
             </div>
         </>

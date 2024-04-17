@@ -9,6 +9,7 @@ const lama = {
     name: 'lama',
     cat: 'locations',
     icon: lamaIcon,
+    geo: { top: 10, left: 94 },
     mainTitle: 'Озеро Лама',
     chapters: [
         {

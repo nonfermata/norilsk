@@ -9,6 +9,7 @@ const arena = {
     name: 'arena',
     cat: 'locations',
     icon: arenaIcon,
+    geo: { top: 20, left: 7 },
     mainTitle: '«Арена»',
     subTitle: 'Здесь тепло и уютно',
     chapters: [

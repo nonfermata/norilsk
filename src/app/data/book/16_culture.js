@@ -9,6 +9,7 @@ const culture = {
     name: 'culture',
     cat: 'locations',
     icon: cultureIcon,
+    geo: { top: 4, left: 21 },
     mainTitle: 'Городской центр культуры',
     chapters: [
         {

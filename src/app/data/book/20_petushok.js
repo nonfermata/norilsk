@@ -8,7 +8,8 @@ const petushok = {
     name: 'petushok',
     cat: 'locations',
     icon: petushokIcon,
-    mainTitle: 'Детский сад «Золотой\u00A0петушок» в\u00A0Талнахе',
+    geo: { top: 19, left: 69 },
+    mainTitle: 'Детский сад «Золотой петушок» в Талнахе',
     chapters: [
         {
             title: 'Как я был мажором',

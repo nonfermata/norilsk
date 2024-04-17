@@ -9,6 +9,7 @@ const karier = {
     name: 'karier',
     cat: 'locations',
     icon: karierIcon,
+    geo: { top: 67, left: 3 },
     mainTitle: 'Карьер',
     chapters: [
         {

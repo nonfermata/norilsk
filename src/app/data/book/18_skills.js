@@ -8,6 +8,7 @@ const skills = {
     name: 'skills',
     cat: 'locations',
     icon: skillsIcon,
+    geo: { top: 22, left: 53 },
     mainTitle: 'Детская школа искусств',
     chapters: [
         {

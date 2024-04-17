@@ -9,7 +9,8 @@ const otdyh = {
     name: 'otdyh',
     cat: 'locations',
     icon: otdyhIcon,
-    mainTitle: 'База отдыха на\u00A0Вальковском шоссе',
+    geo: { top: 38, left: 92 },
+    mainTitle: 'База отдыха на Вальковском шоссе',
     chapters: [
         {
             title: 'Спасение на «Семи ветрах»',

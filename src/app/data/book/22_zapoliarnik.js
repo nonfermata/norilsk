@@ -8,6 +8,7 @@ const zapoliarnik = {
     name: 'zapoliarnik',
     cat: 'locations',
     icon: zapoliarnikIcon,
+    geo: { top: 12, left: 36 },
     mainTitle: 'Стадион «Заполярник»',
     chapters: [
         {

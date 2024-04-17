@@ -9,6 +9,7 @@ const shmidt = {
     name: 'shmidt',
     cat: 'locations',
     icon: shmidtIcon,
+    geo: { top: 58, left: 55 },
     mainTitle: 'Гора Шмидта',
     chapters: [
         {

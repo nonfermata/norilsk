@@ -9,6 +9,7 @@ const dolgoe = {
     name: 'dolgoe',
     cat: 'locations',
     icon: dolgoeIcon,
+    geo: { top: 86, left: 13 },
     mainTitle: 'Озеро Долгое',
     subTitle: 'Почувствовать себя по-настоящему живым',
     chapters: [

@@ -9,11 +9,12 @@ const Gorod = () => {
         <div className={classes.gorodWrap}>
             {text.map((item, index) => (
                 <>
-                    <div key={index} className={classes.baseText}>
+                    <div key={item} className={classes.baseText}>
                         {item}
                     </div>
                     {index === 0 && (
                         <img
+                            key='keyImg'
                             className={classes.mainPhoto}
                             src={photos[0]}
                             alt='Image'

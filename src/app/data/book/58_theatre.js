@@ -9,7 +9,8 @@ const theatre = {
     name: 'theatre',
     cat: 'locations',
     icon: theatreIcon,
-    mainTitle: 'Театр драмы им. Владимира Маяковского',
+    geo: { top: 23, left: 24 },
+    mainTitle: 'Театр драмы им. Владимира Маяковского',
     subTitle: 'Один из лучших в Красноярском крае',
     chapters: [
         {

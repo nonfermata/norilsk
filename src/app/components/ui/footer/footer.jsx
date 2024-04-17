@@ -16,10 +16,10 @@ const Footer = () => {
             }
         >
             <a
-                href='https://popovmedia.ru/'
-                title='Медиашкола Игоря Попова'
+                href='//vk.com/popovmedia'
                 target='_blank'
                 rel='noreferrer'
+                title='Медиашкола Игоря Попова в ВК'
                 className={classes.mediaschool}
             >
                 <img src={mediaschool} alt='Медиашкола - logo' />

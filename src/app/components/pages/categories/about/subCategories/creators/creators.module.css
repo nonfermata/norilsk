@@ -12,6 +12,11 @@
     width: 31%;
 }
 
+.audioRole {
+    font-weight: 600;
+    color: var(--blue);
+}
+
 .personName {
     width: 67%;
     font-weight: 500;

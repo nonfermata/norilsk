@@ -8,7 +8,7 @@ const FooterMobile = () => {
     return (
         <div className={classes.footerMobileWrap}>
             <a
-                href='https://popovmedia.ru/'
+                href='//vk.com/popovmedia'
                 title='Медиашкола Игоря Попова'
                 target='_blank'
                 rel='noreferrer'

@@ -9,7 +9,8 @@ const park = {
     name: 'park',
     cat: 'locations',
     icon: parkIcon,
-    mainTitle: 'Парк у «Черного тюльпана» и\u00A0трубы',
+    geo: { top: 57, left: 20 },
+    mainTitle: 'Парк у «Черного тюльпана» и трубы',
     subTitle: 'Здесь видишь не внешность Норильска',
     chapters: [
         {

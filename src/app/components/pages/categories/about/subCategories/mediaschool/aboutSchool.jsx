@@ -3,24 +3,31 @@ import classes from './mediaschool.module.css';
 import { Link } from 'react-router-dom';
 import mediaschool from '../../../../../../data/mediaschool';
 
-const SchoolOfficial = () => {
+const AboutSchool = () => {
     const { text, photos } = mediaschool.official;
     return (
         <>
             <div className={classes.blockTitleHead}>
                 <div className={classes.blockTitle}>О школе</div>
                 <span className='fw300 grey'>|</span>
-                <Link to='nonofficial' className={classes.blockLink}>
-                    Прийти <span className='no_wrap'>в школу</span>
+                <Link to='time-for-school' className={classes.blockLink}>
+                    Пора <span className='no_wrap'>в школу!</span>
                 </Link>
             </div>
             <div className={classes.infoBlock}>
+                <img
+                    key='keyTopImg'
+                    className={classes.officialImage}
+                    src={photos[8]}
+                    alt='Image'
+                />
                 {text.map((item, index) => (
                     <>
-                        <div key={index} className={classes.baseText}>
+                        <div key={item} className={classes.baseText}>
                             {item}
                         </div>
                         <img
+                            key={item + 'keyImg'}
                             className={classes.officialImage}
                             src={photos[index]}
                             alt='Image'
@@ -36,4 +43,4 @@ const SchoolOfficial = () => {
     );
 };
 
-export default SchoolOfficial;
+export default AboutSchool;

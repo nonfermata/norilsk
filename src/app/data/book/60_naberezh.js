@@ -9,7 +9,8 @@ const naberezh = {
     name: 'naberezh',
     cat: 'locations',
     icon: naberezhIcon,
-    mainTitle: 'У набережной Урванцева',
+    geo: { top: 75.5, left: 34 },
+    mainTitle: 'У набережной Урванцева',
     chapters: [
         {
             title: 'Научиться держать равновесие…',

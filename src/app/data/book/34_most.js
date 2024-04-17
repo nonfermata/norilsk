@@ -9,7 +9,8 @@ const most = {
     name: 'most',
     cat: 'locations',
     icon: mostIcon,
-    mainTitle: 'Мост на реке Норильской',
+    geo: { top: 53, left: 70 },
+    mainTitle: 'Мост на реке Норильской',
     chapters: [
         {
             title: 'Как мы снимали «Титаник»',

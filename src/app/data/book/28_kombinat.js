@@ -9,7 +9,8 @@ const kombinat = {
     name: 'kombinat',
     cat: 'locations',
     icon: kombinatIcon,
-    mainTitle: 'Комбинат, «Надежда», плавильный цех',
+    geo: { top: 6, left: 4 },
+    mainTitle: 'Комбинат, «Надежда», плавильный цех',
     chapters: [
         {
             title: 'Мой папа — супергерой!',

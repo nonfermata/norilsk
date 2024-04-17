@@ -1,3 +1,89 @@
+.mapWrap {
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: 1.5s getmap normal;
+}
+
+@keyframes getmap {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.map {
+    position: relative;
+    width: fit-content;
+}
+
+.map img {
+    max-width: 100vw;
+    max-height: calc(100vh - 60px);
+}
+
+.geoNone {
+    display: none;
+}
+
+.geo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    color: yellow;
+    cursor: pointer;
+    transition: all ease .15s;
+    animation: 1.5s fly normal;
+}
+
+
+@keyframes fly {
+    0% {
+        margin-top: -500px;
+        opacity: 0;
+    }
+    100% {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
+
+.geo:hover {
+    padding-top: 3px;
+}
+
+.geoTitle {
+    position: absolute;
+    top: 0;
+    left: 80%;
+    padding: 0;
+    background-color: #ffffffcc;
+    color: var(--dark-blue);
+    font-size: .8em;
+    font-weight: 600;
+    border-radius: 3px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.geoTitleHover {
+    transition: all .5s ease;
+    padding: 3px 7px;
+    width: fit-content;
+    height: fit-content;
+    opacity: 1;
+    z-index: 100;
+}
+
 .tempList {
     list-style: none;
     margin-left: 50px;
@@ -71,8 +157,12 @@
 }
 
 @media screen and (max-width: 768px) {
+    .mapWrap {
+        display: none;
+    }
+
     .iconsLocationsMobile {
-        display: flex;
+        display: block;
     }
 
     .tempList {

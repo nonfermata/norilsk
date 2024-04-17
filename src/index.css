@@ -37,11 +37,6 @@
     --dark-orange: #d92400;
     --brown: #a8873f;
     --brown-grey: #877059;
-    --upcoming-bg: #c5ede4;
-    --now-bg: #fafab6;
-    --completed-bg: #d5f2cb;
-    --user-cacelled-bg: #e3e5e5;
-    --admin-cancelled-bg: #e5dcda;
 }
 
 .blue {
@@ -144,7 +139,7 @@ a {
 
 .pageWrap {
     position: relative;
-    padding: 60px 0 90px 0;
+    padding: 60px 0 75px 0;
 }
 
 .pageBgr {

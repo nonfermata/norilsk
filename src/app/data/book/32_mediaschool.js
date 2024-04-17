@@ -9,6 +9,7 @@ const mediaschool = {
     name: 'mediaschool',
     cat: 'locations',
     icon: mediaschoolIcon,
+    geo: { top: 57, left: 9 },
     mainTitle: 'Медиашкола в\u00A0«Северном\u00A0городе»',
     chapters: [
         {

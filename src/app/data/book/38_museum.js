@@ -9,6 +9,7 @@ const museum = {
     name: 'museum',
     cat: 'locations',
     icon: museumIcon,
+    geo: { top: 41, left: 41 },
     mainTitle: 'Музей Норильска',
     chapters: [
         {
